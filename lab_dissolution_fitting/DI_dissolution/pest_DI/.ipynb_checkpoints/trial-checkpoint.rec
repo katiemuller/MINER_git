@@ -1,0 +1,384 @@
+                        PEST RUN RECORD: CASE trial
+
+
+ PEST Version: 17.6
+
+
+ PEST run mode:-
+
+    Parameter estimation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :     7
+    Number of adjustable parameters                :     7
+    Number of parameter groups                     :     1
+    Number of observations                         :    30
+    Number of prior estimates                      :     0
+
+
+ Model command line(s):-
+
+    ./trial.sh
+
+
+ Jacobian command line:-
+
+    na
+
+
+ Model interface files:-
+
+    Templates:
+       pflotran.tpl
+    for model input files:
+       pflotran.in
+
+    (Parameter values written using single precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       trial.ins
+    for reading model output files:
+       output_processed.txt
+
+
+ PEST-to-model message file:-
+
+    na
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ dgr          relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ forsterite_r none              relative   1.000000E-02   1.000000E-10    2.00000    
+ fayalite_rat none              relative   1.000000E-02   1.000000E-10    2.00000    
+ ni2sio4_rate none              relative   1.000000E-02   1.000000E-10    2.00000    
+ tephroite_ra none              relative   1.000000E-02   1.000000E-10    2.00000    
+ wollastonite none              relative   1.000000E-02   1.000000E-10    2.00000    
+ enstatite_ra none              relative   1.000000E-02   1.000000E-10    2.00000    
+ chrysotile_r none              relative   1.000000E-02   1.000000E-10    2.00000    
+
+ Name         Group          Scale         Offset        Model command number
+ forsterite_r dgr          0.100000        0.00000            1
+ fayalite_rat dgr          0.100000        0.00000            1
+ ni2sio4_rate dgr          0.100000        0.00000            1
+ tephroite_ra dgr          0.100000        0.00000            1
+ wollastonite dgr          0.100000        0.00000            1
+ enstatite_ra dgr          0.100000        0.00000            1
+ chrysotile_r dgr          0.100000        0.00000            1
+
+
+ Prior information:-
+
+    No prior information supplied
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  obs1                    0.00000          1.000       obsgroup    
+  obs2                   2.025956E-06      1.000       obsgroup    
+  obs3                   2.349793E-06      1.000       obsgroup    
+  obs4                   3.181862E-06      1.000       obsgroup    
+  obs5                   2.940113E-06      1.000       obsgroup    
+  obs6                   4.547293E-06      1.000       obsgroup    
+  obs7                    0.00000          1.000       obsgroup    
+  obs8                   1.431546E-06      1.000       obsgroup    
+  obs9                   5.601523E-07      1.000       obsgroup    
+  obs10                  2.671015E-07      1.000       obsgroup    
+  obs11                  9.250054E-08      1.000       obsgroup    
+  obs12                   0.00000          1.000       obsgroup    
+  obs13                   0.00000          1.000       obsgroup    
+  obs14                  7.345757E-07      1.000       obsgroup    
+  obs15                  1.194566E-06      1.000       obsgroup    
+  obs16                  1.533699E-06      1.000       obsgroup    
+  obs17                  1.591293E-06      1.000       obsgroup    
+  obs18                  2.996190E-06      1.000       obsgroup    
+  obs19                  1.104907E-05      1.000       obsgroup    
+  obs20                  3.152188E-04      1.000       obsgroup    
+  obs21                  4.334060E-04      1.000       obsgroup    
+  obs22                  6.249535E-04      1.000       obsgroup    
+  obs23                  6.748457E-04      1.000       obsgroup    
+  obs24                  1.556198E-03      1.000       obsgroup    
+  obs25                  8.676277E-06      1.000       obsgroup    
+  obs26                  2.445695E-05      1.000       obsgroup    
+  obs27                  1.974412E-05      1.000       obsgroup    
+  obs28                  1.767306E-05      1.000       obsgroup    
+  obs29                  2.483082E-05      1.000       obsgroup    
+  obs30                  2.730915E-05      1.000       obsgroup    
+
+
+ Control settings:-
+
+    Initial lambda                                               :  5.0000    
+    Lambda adjustment factor                                     :  2.0000    
+    Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+    Limiting relative phi reduction between lambdas              : 3.00000E-02
+    Maximum trial lambdas per iteration                          :  10
+    Forgive model run failure during lamda testing               : no
+    Forgive model run failure during Jacobian runs               : no
+
+    Perform Broyden's update of Jacobian matrix                  : no
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   : na
+    Maximum relative parameter change (relative-limited changes) :  3.0000
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : 0.10000             
+    Iteration at which to first consider derivatives switch      :   1
+
+    Relative phi reduction indicating convergence                : 0.10000E-01
+    Number of phi values required within this range              :   3
+    Maximum number of consecutive failures to lower phi          :   3
+    Minimal relative parameter change indicating convergence     : 0.10000E-01
+    Number of consecutive iterations with minimal param change   :   3
+    Maximum number of optimisation iterations                    :  30
+
+    Attempt automatic user intervention                          : no
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options: -
+
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+                             OPTIMISATION RECORD
+
+
+ INITIAL CONDITIONS: 
+    Sum of squared weighted residuals (ie phi) =  1.33192E-02
+
+       Current parameter values
+       forsterite_r    1.000000E-02
+       fayalite_rat    1.000000E-02
+       ni2sio4_rate    1.000000E-02
+       tephroite_ra    1.000000E-02
+       wollastonite    1.000000E-02
+       enstatite_ra    1.000000E-02
+       chrysotile_r    1.000000E-02
+
+
+ OPTIMISATION ITERATION NO.        : 1
+    Model calls so far             : 1
+    Starting phi for this iteration:  1.33192E-02
+
+        Lambda =   5.0000     ----->
+           Phi =  1.33662E-02  (  1.004 times starting phi)
+
+        Lambda =   2.5000     ----->
+           Phi =  1.33671E-02  (  1.004 times starting phi)
+
+        Lambda =   10.000     ----->
+           Phi =  1.33648E-02  (  1.003 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  1.33648E-02
+    Relative phi reduction between optimisation iterations less than 0.1000
+    Switch to higher order derivatives calculation
+    (restart from best parameters so far - these achieved at iteration    0)
+
+       Current parameter values
+       forsterite_r    1.000000E-02
+       fayalite_rat    1.000000E-02
+       ni2sio4_rate    1.000000E-02
+       tephroite_ra    1.000000E-02
+       wollastonite    1.000000E-02
+       enstatite_ra    1.000000E-02
+       chrysotile_r    1.000000E-02
+
+
+ OPTIMISATION ITERATION NO.        : 2
+    Model calls so far             : 11
+    Starting phi for this iteration:  1.33192E-02
+
+        Lambda =   5.0000     ----->
+           Phi =  1.33376E-02  (  1.001 times starting phi)
+
+        Lambda =   2.5000     ----->
+           Phi =  1.33383E-02  (  1.001 times starting phi)
+
+        Lambda =   10.000     ----->
+           Phi =  1.33363E-02  (  1.001 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  1.33363E-02
+
+       Current parameter values                 Previous parameter values
+       forsterite_r    9.969437E-03             forsterite_r     1.000000E-02
+       fayalite_rat    1.267977E-02             fayalite_rat     1.000000E-02
+       ni2sio4_rate    1.000000E-10             ni2sio4_rate     1.000000E-02
+       tephroite_ra    1.000000E-10             tephroite_ra     1.000000E-02
+       wollastonite    1.225201E-02             wollastonite     1.000000E-02
+       enstatite_ra    8.955001E-03             enstatite_ra     1.000000E-02
+       chrysotile_r    1.000000E-10             chrysotile_r     1.000000E-02
+    Maximum relative change:  1.000     ["ni2sio4_rate"]
+
+    Optimisation complete: the  3 lowest phi's are within a relative distance
+                           of eachother of 1.000E-02
+    Total model calls:     28
+
+    The model has been run one final time using best parameters. 
+    Thus all model input files contain best parameter values, and model 
+    output files contain model results based on these parameters.
+
+
+                             OPTIMISATION RESULTS
+
+
+ Parameters ----->
+
+ Parameter        Estimated         95% percent confidence limits
+                  value             lower limit       upper limit
+  forsterite_r   1.000000E-02       -4.64814           4.66814    
+  fayalite_rat   1.000000E-02      -2.313310E+06      2.313310E+06
+  ni2sio4_rate   1.000000E-02      -2.535801E+06      2.535801E+06
+  tephroite_ra   1.000000E-02      -2.535765E+06      2.535765E+06
+  wollastonite   1.000000E-02       -201.930           201.950    
+  enstatite_ra   1.000000E-02       -164.701           164.721    
+  chrysotile_r   1.000000E-02      -3.665607E+06      3.665607E+06
+
+ Note: confidence limits provide only an indication of parameter uncertainty.
+       They rely on a linearity assumption which  may not extend as far in 
+       parameter space as the confidence limits themselves - see PEST manual.
+
+ See file trial.sen for parameter sensitivities.
+
+
+ Observations ----->
+
+ Observation            Measured       Calculated     Residual       Weight     Group
+                        value          value
+ obs1                   0.00000        0.00000        0.00000        1.000      obsgroup    
+ obs2                  2.025956E-06   2.040248E-09   2.023915E-06    1.000      obsgroup    
+ obs3                  2.349793E-06   7.246472E-10   2.349068E-06    1.000      obsgroup    
+ obs4                  3.181862E-06   1.749975E-11   3.181845E-06    1.000      obsgroup    
+ obs5                  2.940113E-06   1.822110E-12   2.940111E-06    1.000      obsgroup    
+ obs6                  4.547293E-06   3.771200E-13   4.547293E-06    1.000      obsgroup    
+ obs7                   0.00000        0.00000        0.00000        1.000      obsgroup    
+ obs8                  1.431546E-06   1.200495E-03  -1.199063E-03    1.000      obsgroup    
+ obs9                  5.601523E-07   1.200176E-03  -1.199616E-03    1.000      obsgroup    
+ obs10                 2.671015E-07   1.200011E-03  -1.199744E-03    1.000      obsgroup    
+ obs11                 9.250054E-08   1.200069E-03  -1.199976E-03    1.000      obsgroup    
+ obs12                  0.00000       1.200364E-03  -1.200364E-03    1.000      obsgroup    
+ obs13                  0.00000        0.00000        0.00000        1.000      obsgroup    
+ obs14                 7.345757E-07   4.763575E-05  -4.690117E-05    1.000      obsgroup    
+ obs15                 1.194566E-06   1.691907E-05  -1.572450E-05    1.000      obsgroup    
+ obs16                 1.533699E-06   4.085845E-07   1.125114E-06    1.000      obsgroup    
+ obs17                 1.591293E-06   4.254269E-08   1.548751E-06    1.000      obsgroup    
+ obs18                 2.996190E-06   8.805183E-09   2.987385E-06    1.000      obsgroup    
+ obs19                 1.104907E-05   1.104907E-05   4.770545E-12    1.000      obsgroup    
+ obs20                 3.152188E-04   6.032143E-06   3.091867E-04    1.000      obsgroup    
+ obs21                 4.334060E-04   3.026081E-06   4.303799E-04    1.000      obsgroup    
+ obs22                 6.249535E-04   2.532642E-07   6.247003E-04    1.000      obsgroup    
+ obs23                 6.748457E-04   5.742293E-08   6.747883E-04    1.000      obsgroup    
+ obs24                 1.556198E-03   2.070062E-08   1.556177E-03    1.000      obsgroup    
+ obs25                 8.676277E-06   8.676277E-06   7.353996E-14    1.000      obsgroup    
+ obs26                 2.445695E-05   4.996653E-02  -4.994207E-02    1.000      obsgroup    
+ obs27                 1.974412E-05   5.000261E-02  -4.998287E-02    1.000      obsgroup    
+ obs28                 1.767306E-05   5.014555E-02  -5.012788E-02    1.000      obsgroup    
+ obs29                 2.483082E-05   5.127927E-02  -5.125444E-02    1.000      obsgroup    
+ obs30                 2.730915E-05   5.638425E-02  -5.635694E-02    1.000      obsgroup    
+
+ See file trial.res for more details of residuals in graph-ready format.
+
+ See file trial.seo for composite observation sensitivities.
+
+
+ Objective function ----->
+
+   Sum of squared weighted residuals (ie phi)                =  1.3319E-02
+
+
+ Correlation Coefficient ----->
+
+   Correlation coefficient                                   = -0.14754    
+
+
+ Analysis of residuals ----->
+
+   All residuals:-
+      Number of residuals with non-zero weight                       =    30
+      Mean value of non-zero weighted residuals                      = -8.6703E-03
+      Maximum weighted residual [observation "obs24"]                =  1.5562E-03
+      Minimum weighted residual [observation "obs30"]                = -5.6357E-02
+      Standard variance of weighted residuals                        =  5.7909E-04
+      Standard error of weighted residuals                           =  2.4064E-02
+
+      Note: the above variance was obtained by dividing the objective 
+      function by the number of system degrees of freedom (ie. number of 
+      observations with non-zero weight plus number of prior information 
+      articles with non-zero weight minus the number of adjustable parameters.)
+      If the degrees of freedom is negative the divisor becomes 
+      the number of observations with non-zero weight plus the number of 
+      prior information items with non-zero weight.
+
+
+ K-L information statistics ----->
+
+
+   AIC   =  -215.5924    
+   AICC  =  -208.7353    
+   BIC   =  -204.3829    
+   KIC   =  -335.5015    
+
+ Parameter covariance matrix ----->
+
+              forsterite_r fayalite_rat ni2sio4_rate tephroite_ra wollastonite enstatite_ra chrysotile_r
+ forsterite_r    5.069      -6.4060E+05  -2.8265E+05   2.8233E+05   -205.2        179.1      -1.2657E+05
+ fayalite_rat  -6.4060E+05   1.2501E+12   1.0107E+12  -1.0106E+12   2.6365E+07  -2.2683E+07   1.0954E+12
+ ni2sio4_rate  -2.8265E+05   1.0107E+12   1.5021E+12  -1.5021E+12   1.1662E+07  -1.0011E+07   2.1070E+12
+ tephroite_ra   2.8233E+05  -1.0106E+12  -1.5021E+12   1.5021E+12  -1.1629E+07   9.9981E+06  -2.1070E+12
+ wollastonite   -205.2       2.6365E+07   1.1662E+07  -1.1629E+07    9526.       -7333.       5.2033E+06
+ enstatite_ra    179.1      -2.2683E+07  -1.0011E+07   9.9981E+06   -7333.        6338.      -4.4811E+06
+ chrysotile_r  -1.2657E+05   1.0954E+12   2.1070E+12  -2.1070E+12   5.2033E+06  -4.4811E+06   3.1389E+12
+
+
+ Parameter correlation coefficient matrix ----->
+
+              forsterite_r fayalite_rat ni2sio4_rate tephroite_ra wollastonite enstatite_ra chrysotile_r
+ forsterite_r    1.000      -0.2545      -0.1024       0.1023      -0.9337       0.9993      -3.1731E-02
+ fayalite_rat  -0.2545        1.000       0.7375      -0.7375       0.2416      -0.2548       0.5530    
+ ni2sio4_rate  -0.1024       0.7375        1.000       -1.000       9.7486E-02  -0.1026       0.9703    
+ tephroite_ra   0.1023      -0.7375       -1.000        1.000      -9.7213E-02   0.1025      -0.9703    
+ wollastonite  -0.9337       0.2416       9.7486E-02  -9.7213E-02    1.000      -0.9438       3.0091E-02
+ enstatite_ra   0.9993      -0.2548      -0.1026       0.1025      -0.9438        1.000      -3.1771E-02
+ chrysotile_r  -3.1731E-02   0.5530       0.9703      -0.9703       3.0091E-02  -3.1771E-02    1.000    
+
+
+ Normalized eigenvectors of parameter covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4     Vector_5     Vector_6     Vector_7   
+ forsterite_r   0.9988      -4.4480E-02   1.9688E-02   1.3011E-03   1.7384E-05   7.0277E-07  -8.3527E-08
+ fayalite_rat  -6.4964E-09  -1.0840E-06  -2.3178E-04  -4.5684E-04   0.3318      -0.8894       0.3144    
+ ni2sio4_rate   8.3703E-04   3.9294E-02   9.2979E-02  -0.6991      -0.5237      -2.6957E-02   0.4754    
+ tephroite_ra   8.3701E-04   3.9290E-02   9.2146E-02  -0.7007       0.5217       2.6905E-02  -0.4754    
+ wollastonite  -1.6577E-02  -0.6907      -0.7107      -0.1328      -7.6244E-04  -2.8929E-05   3.4398E-06
+ enstatite_ra  -4.5734E-02  -0.7197       0.6910       5.0922E-02   6.2003E-04   2.4885E-05  -2.9578E-06
+ chrysotile_r  -1.1258E-08  -1.9116E-06  -4.7580E-04  -8.9058E-04   0.5861       0.4554       0.6701    
+
+
+ Eigenvalues ----->
+
+                1.2398E-03    3.865       1.0834E+04   1.7344E+05   4.9612E+08   7.5039E+11   6.6423E+12

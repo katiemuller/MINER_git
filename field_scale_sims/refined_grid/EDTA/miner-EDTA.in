@@ -1,0 +1,829 @@
+## Testing Well Confirmation for MINER
+# Two Wells - (1) CO2 injection well + water injection well (2) extraction well
+# Trying to Add EDTA into injection solns
+# Katie Muller 09/20/24
+
+SIMULATION
+  SIMULATION_TYPE SUBSURFACE
+  PROCESS_MODELS
+    SUBSURFACE_FLOW flow
+      MODE SCO2
+      OPTIONS
+        NO_STATE_TRANSITION_OUTPUT
+        ISOTHERMAL_TEMPERATURE 25.d0
+      /
+    /
+    SUBSURFACE_TRANSPORT
+     MODE GIRT
+    /
+    WELL_MODEL well_1
+      OPTIONS
+        FLOW_COUPLING FULLY_IMPLICIT
+        TYPE HYDROSTATIC
+      END
+	END
+	
+	WELL_MODEL well_2
+       OPTIONS
+        FLOW_COUPLING FULLY_IMPLICIT
+        TYPE HYDROSTATIC
+       END
+    END
+  /
+END
+
+SUBSURFACE
+
+ISOTHERMAL
+CO2_DATABASE /home/mull128/software/pflotran/database/co2data0.dat
+
+NUMERICAL_METHODS flow
+
+  NEWTON_SOLVER
+    USE_INFINITY_NORM_CONVERGENCE
+    NUMERICAL_JACOBIAN
+    MINIMUM_NEWTON_ITERATIONS 2
+    #CENTRAL_DIFFERENCE_JACOBIAN
+	CONVERGE_ON_WELL_RESIDUAL
+  END
+
+  LINEAR_SOLVER
+    #SOLVER DIRECT
+  END
+
+  TIMESTEPPER FLOW
+    TIMESTEP_MAXIMUM_GROWTH_FACTOR 1.25
+  END
+
+END
+
+NUMERICAL_METHODS TRANSPORT
+
+  TIMESTEPPER
+    TS_ACCELERATION 16
+    !MAX_STEPS 10
+  /
+
+  NEWTON_SOLVER
+    #ATOL 1D-8
+    #RTOL 1D-6
+    #STOL 1D-30
+    #DTOL 1D4
+    #ITOL 1D-8
+    MAXIMUM_NUMBER_OF_ITERATIONS 100
+    !MAXF 100
+    !PRINT_DETAILED_CONVERGENCE
+  /
+
+END
+
+WELLBORE_MODEL well_1
+  # Uncommenting PRINT_WELL_FILE will create the .well file at each time step
+  #PRINT_WELL_FILE
+
+  # Note the SEGMENT_CENTER_Z_VALUES must be provided in ascending order!
+  WELL_GRID
+	NUMBER_OF_SEGMENTS 20
+    TOP_OF_HOLE    570.d0 730.d0 -700.d0
+    BOTTOM_OF_HOLE 570.d0 730.d0 -800.d0
+	CASING 1.d0 1.d0 1.d0 1.d0 16@0.d0
+  /
+  WELL
+    DIAMETER 0.1143d0
+    FRICTION_COEFFICIENT 1.d0
+    WELL_INDEX_MODEL PEACEMAN_3D
+    SKIN_FACTOR 0.d0
+  /
+  USE_WELL_COUPLER
+END
+
+WELL_MODEL_OUTPUT
+  WELL_LIQ_PRESSURE
+  WELL_GAS_PRESSURE
+  WELL_LIQ_Q
+  WELL_GAS_Q
+/
+
+WELLBORE_MODEL well_2
+  # Uncommenting PRINT_WELL_FILE will create the .well file at each time step
+  #PRINT_WELL_FILE
+
+  # Note the SEGMENT_CENTER_Z_VALUES must be provided in ascending order!
+  WELL_GRID
+	NUMBER_OF_SEGMENTS 20
+    TOP_OF_HOLE    910.d0 730.d0 -700.d0
+    BOTTOM_OF_HOLE 910.d0 730.d0 -800.d0									  
+    CASING 0.d0
+  /
+  WELL
+    DIAMETER 0.1143d0
+    FRICTION_COEFFICIENT 1.d0
+    WELL_INDEX_MODEL PEACEMAN_3D
+    SKIN_FACTOR 0.d0
+  /
+  USE_WELL_COUPLER
+END
+
+WELL_MODEL_OUTPUT
+  WELL_LIQ_PRESSURE
+  WELL_GAS_PRESSURE
+  WELL_LIQ_Q
+  WELL_GAS_Q
+/
+
+#=========================== chemistry ========================================
+CHEMISTRY
+  PRIMARY_SPECIES
+    Al+++
+    Ca++
+    Fe++
+    K+
+    Mg++
+    Mn++
+    Na+
+    SiO2(aq)
+    Ti(OH)4(aq)
+    H+
+    CO2(aq)
+    Cl-
+    O2(aq)
+	EDTA----
+	Ni++
+	CrO4--
+  /
+
+  SECONDARY_SPECIES
+    HCO3-
+    OH-
+    Al(OH)2+
+    AlO2-
+    AlOH++
+    CO3--
+    CaCO3(aq)
+    CaHCO3+
+    Fe+++
+    Fe(OH)3(aq)
+    Fe(OH)4-
+    FeHCO3+
+    HAlO2(aq)
+    HSiO3-
+    MgCO3(aq)
+    MgHCO3+
+    MnCO3(aq)
+    MnHCO3+
+    MnOH+
+    NaHCO3(aq)
+    NaHSiO3(aq)
+	Ni(OH)2(aq)
+    Ni(OH)3-
+    Ni2OH+++
+	EDTAH---
+    EDTAH2--
+    EDTAH3-
+    FeIIEDTA--
+    FeIIEDTAH-
+    FeIIOHEDTA---
+    FeII(OH)2EDTA----
+    FeIIIEDTA-
+    FeIIIEDTAH(aq)
+    FeIII(OH)2EDTA----
+    FeIIIOHEDTA--
+    KEDTA---
+    MgEDTA--
+    MgEDTAH-
+    NiEDTA--(katie)
+    NiEDTAH-(katie)
+    CaEDTA--(katie)
+    CaEDTAH-(katie)
+    MnEDTA--(katie)
+    MnEDTAH-(katie)
+  /
+
+  ACTIVE_GAS_SPECIES
+    GAS_TRANSPORT_IS_UNVETTED
+    CO2(g)
+   # O2(g)
+  /
+  PASSIVE_GAS_SPECIES
+    CO2(g)
+    O2(g)
+  /
+  MINERALS
+    Calcite-kam
+    Anatase
+    Beidellite-Ca-kam
+    Beidellite-K-kam
+    Beidellite-Mg-kam
+    Chalcedony-kam
+    Dawsonite-kam
+    Rhodochrosite-kam
+    Siderite-kam
+	Forsterite
+	Fayalite
+	Ni2SiO4
+	Tephroite
+	Wollastonite
+	Enstatite
+	Chrysotile
+  /
+  MINERAL_KINETICS
+    Calcite-kam
+      RATE_CONSTANT 5.01d-1 mol/cm^2-sec
+      ACTIVATION_ENERGY 14.4 kJ/mol
+    /
+    Anatase
+      RATE_CONSTANT 4.47d-9 mol/cm^2-sec
+      #ACTIVATION_ENERGY 37.9 kJ/mol
+    /
+    Beidellite-Ca-kam
+      RATE_CONSTANT 1.05d-11 mol/cm^2-sec
+      #ACTIVATION_ENERGY 23.6 kJ/mol
+    /
+    Beidellite-K-kam
+      RATE_CONSTANT 1.05d-11 mol/cm^2-sec
+      #ACTIVATION_ENERGY 23.6 kJ/mol
+    /
+    Beidellite-Mg-kam
+      RATE_CONSTANT 1.05d-11 mol/cm^2-sec
+      #ACTIVATION_ENERGY 23.6 kJ/mol
+    /
+    Chalcedony-kam
+      RATE_CONSTANT 5.89d-13 mol/cm^2-sec
+      #ACTIVATION_ENERGY 74.5 kJ/mol
+    /
+    Dawsonite-kam
+      RATE_CONSTANT 1.0d-7 mol/cm^2-sec
+      #ACTIVATION_ENERGY 62.8 kJ/mol
+    /
+    Rhodochrosite-kam
+      RATE_CONSTANT 1.02d-3 mol/cm^2-sec
+      #ACTIVATION_ENERGY 21.0 kJ/mol
+    /
+    Siderite-kam
+      RATE_CONSTANT 1.02d-3 mol/cm^2-sec
+      #ACTIVATION_ENERGY 21.0 kJ/mol
+    /
+	Ni2SiO4
+	  PREFACTOR
+	  RATE_CONSTANT 1.8e-07 mol/m^2-sec
+	  ACTIVATION_ENERGY 67.2d0
+	  PREFACTOR_SPECIES H+
+        ALPHA 0.47d0
+      /
+      /
+	  PREFACTOR
+      RATE_CONSTANT 6.1e-6 mol/m^2-sec # Eyeballed 
+      PREFACTOR_SPECIES EDTA----
+         ALPHA 1.0d0
+      /
+      /  
+	/
+	Forsterite
+	  PREFACTOR
+	  RATE_CONSTANT 5.41e-5 mol/m^2-sec
+	  PREFACTOR_SPECIES H+
+        ALPHA 0.47d0
+      /
+      /
+	  PREFACTOR
+      RATE_CONSTANT 1.018912E-03 mol/m^2-sec # PEST Fit
+      PREFACTOR_SPECIES EDTAH2--
+        ALPHA 1.0d0
+      /
+      /
+	/
+	Fayalite
+	  RATE_CONSTANT 1.58e-9 mol/m^2-sec
+	  #/
+	  PREFACTOR
+      RATE_CONSTANT 1.4e-4 mol/m^2-sec # EDTA
+      PREFACTOR_SPECIES EDTAH2--
+        ALPHA 1.0d0
+      /
+      /
+	/
+	Tephroite
+	  PREFACTOR
+	  RATE_CONSTANT 1.5e-7 mol/m^2-sec
+	  PREFACTOR_SPECIES H+
+	    ALPHA 0.47d0
+	  /
+	  /
+	  PREFACTOR
+      RATE_CONSTANT 2.5e-6 mol/m^2-sec # Eyeballed 
+      PREFACTOR_SPECIES EDTAH2--
+        ALPHA 1.0d0
+      /
+      /
+	/
+	Wollastonite
+	  PREFACTOR
+	  RATE_CONSTANT 5.27e-7 mol/m^2-sec
+	  PREFACTOR_SPECIES H+
+        ALPHA 0.4d0
+      /
+      /
+	  PREFACTOR
+      RATE_CONSTANT 5.0e-8 mol/m^2-sec # EDTA
+      PREFACTOR_SPECIES EDTAH2--
+        ALPHA 1.0d0
+      /
+      /
+	/
+	Enstatite
+	  PREFACTOR
+	  RATE_CONSTANT 9.55e-10 mol/m^2-sec
+	  PREFACTOR_SPECIES H+
+	    ALPHA 0.6d0
+	  /
+	  /
+	  PREFACTOR
+      RATE_CONSTANT 5.0e-10 mol/m^2-sec # EDTA
+      PREFACTOR_SPECIES EDTAH2--
+        ALPHA 1.0d0
+      /
+      /
+	/
+	Chrysotile
+	  RATE_CONSTANT 1e-12 mol/m^2-sec
+	  PREFACTOR
+	  RATE_CONSTANT 5.0e-12 mol/m^2-sec # EDTA
+	  PREFACTOR_SPECIES EDTAH2--
+	    ALPHA 1.0d0
+	  /
+	  /  
+	/
+  /
+
+  DATABASE /home/mull128/projects/MINER/dissolution_exps/data/Database/MINER.dat
+  LOG_FORMULATION
+  ACTIVITY_COEFFICIENTS TIMESTEP
+  OUTPUT
+    SECONDARY_SPECIES
+    FREE_ION
+    PH
+    TOTAL
+    #ALL
+    MINERALS
+    #MINERAL_SATURATION_INDEX
+  /
+END
+
+
+#=========================== discretization ===================================
+GRID
+  skip
+  TYPE STRUCTURED CARTESIAN
+  ORIGIN 0.0d0 0.d0 -820.d0
+  NXYZ 30 30 12
+  DXYZ
+    30@50.d0
+    30@50.d0
+    12@10.d0
+  /
+  noskip
+  TYPE UNSTRUCTURED mesh.ugi
+END
+
+#=========================== fluid properties =================================
+FLUID_PROPERTY
+  PHASE LIQUID
+  DIFFUSION_COEFFICIENT 2.d-9
+END
+
+FLUID_PROPERTY
+  PHASE GAS
+  DIFFUSION_COEFFICIENT 2.d-5
+END
+
+#=========================== more fluid properties ============================
+EOS WATER
+  DENSITY IF97
+  ENTHALPY IF97
+  STEAM_DENSITY IF97
+  STEAM_ENTHALPY IF97
+  SATURATION_PRESSURE IF97
+END
+
+EOS GAS
+  CO2_DATABASE co2_sw.dat
+  HENRYS_CONSTANT DEFAULT
+END
+
+
+#=========================== material properties ==============================
+MATERIAL_PROPERTY base
+  ID 1
+  CHARACTERISTIC_CURVES Gabbro
+  POROSITY 0.01
+  TORTUOSITY 1.d0
+  ROCK_DENSITY 2980.d0
+  THERMAL_CONDUCTIVITY_DRY 2.d0 #W/m-C
+  THERMAL_CONDUCTIVITY_WET 2.18d0 #W/m-C
+  HEAT_CAPACITY 1000 J/kg-C
+  PERMEABILITY
+    # Might be better to make this zone INACTIVE
+    PERM_ISO 9.869233d-26
+  /
+  SOIL_COMPRESSIBILITY_FUNCTION LINEAR
+  POROSITY_COMPRESSIBILITY 1.d-10
+  SOIL_REFERENCE_PRESSURE INITIAL_PRESSURE
+END
+
+MATERIAL_PROPERTY CGO
+  ID 2
+  CHARACTERISTIC_CURVES CGO
+  POROSITY 0.15
+  TORTUOSITY 1.d0
+  ROCK_DENSITY 3230.d0
+  # Set realistic wet and dry thermal conductivities
+  THERMAL_CONDUCTIVITY_DRY 2.86d0 #W/m-C
+  THERMAL_CONDUCTIVITY_WET 2.86d0 #W/m-C
+  HEAT_CAPACITY 700 J/kg-C
+  PERMEABILITY
+    PERM_X 9.869233d-14
+    PERM_Y 9.869233d-14
+    PERM_Z 9.869233d-15
+  /
+  SOIL_COMPRESSIBILITY_FUNCTION LINEAR
+  POROSITY_COMPRESSIBILITY 1.d-8
+  SOIL_REFERENCE_PRESSURE INITIAL_PRESSURE
+END
+
+MATERIAL_PROPERTY Gabbro
+  ID 3
+  CHARACTERISTIC_CURVES Gabbro
+  POROSITY 0.01
+  TORTUOSITY 1.d0
+  ROCK_DENSITY 2980.d0
+  THERMAL_CONDUCTIVITY_DRY 2.86d0 #W/m-C
+  THERMAL_CONDUCTIVITY_WET 2.86d0 #W/m-C
+  HEAT_CAPACITY 700 J/kg-C
+  PERMEABILITY
+    # Might be better to make this zone INACTIVE
+    PERM_ISO 9.869233d-26
+  /
+  SOIL_COMPRESSIBILITY_FUNCTION LINEAR
+  POROSITY_COMPRESSIBILITY 1.3488504e-10
+  SOIL_REFERENCE_PRESSURE 1.2d7
+END
+
+#=========================== characteristic curves ============================
+
+CHARACTERISTIC_CURVES Gabbro
+  SATURATION_FUNCTION BROOKS_COREY
+    #MAX_TRAPPED_GAS_SAT 0.2
+    UNSATURATED_EXTENSION
+    #SMOOTH
+    ALPHA 6.496104d-5
+    LAMBDA 4.033
+    LIQUID_RESIDUAL_SATURATION 0.0
+    MAX_CAPILLARY_PRESSURE 1.d9
+    #SMOOTH
+  /
+  PERMEABILITY_FUNCTION BURDINE_BC_LIQ
+    PHASE LIQUID
+    LAMBDA 4.033
+    LIQUID_RESIDUAL_SATURATION 0.0
+  /
+  PERMEABILITY_FUNCTION MODIFIED_COREY_GAS
+    PHASE GAS
+    LIQUID_RESIDUAL_SATURATION 0.0
+    GAS_RESIDUAL_SATURATION 0.0
+  /
+END
+
+CHARACTERISTIC_CURVES CGO
+  SATURATION_FUNCTION BROOKS_COREY
+    #MAX_TRAPPED_GAS_SAT 0.2
+    UNSATURATED_EXTENSION
+    #SMOOTH
+    ALPHA 6.496104d-5
+    LAMBDA 4.033
+    LIQUID_RESIDUAL_SATURATION 0.01
+    MAX_CAPILLARY_PRESSURE 1.d9
+    #SMOOTH
+  /
+  PERMEABILITY_FUNCTION BURDINE_BC_LIQ
+    PHASE LIQUID
+    LAMBDA 4.033
+    LIQUID_RESIDUAL_SATURATION 0.01
+  /
+  PERMEABILITY_FUNCTION MODIFIED_COREY_GAS
+    PHASE GAS
+    LIQUID_RESIDUAL_SATURATION 0.01
+    GAS_RESIDUAL_SATURATION 0.0
+  /
+END
+
+#=========================== output options ===================================
+OUTPUT
+  SNAPSHOT_FILE
+    #TIMES d 14.d0
+    TIMES y 1.d-2 1.d-1 1.d0
+    PERIODIC TIME 0.25 y
+    FORMAT HDF5
+   /	
+  MASS_BALANCE_FILE
+    PERIODIC TIME 0.25 y
+    #PERIODIC TIMESTEP 5
+     TOTAL_MASS_REGIONS
+       well
+    /
+   /
+
+  UNFILTER_NON_STATE_VARIABLES
+
+  VARIABLES
+   TEMPERATURE
+   LIQUID_PRESSURE
+   GAS_PRESSURE
+   LIQUID_SATURATION
+   GAS_SATURATION
+   PRECIPITATE_SATURATION
+   TRAPPED_GAS_SATURATION
+   LIQUID_MASS_FRACTIONS
+   LIQUID_MOLE_FRACTIONS
+   GAS_MASS_FRACTIONS
+   LIQUID_DENSITY
+   GAS_DENSITY
+   PERMEABILITY
+   LIQUID_RELATIVE_PERMEABILITY
+   GAS_RELATIVE_PERMEABILITY
+   POROSITY
+   VOLUME
+  /
+END
+
+#=========================== times ============================================
+TIME
+  FINAL_TIME 10.d0 y
+  INITIAL_TIMESTEP_SIZE 1.d0 h
+  MAXIMUM_TIMESTEP_SIZE 50.d0 d
+  MAXIMUM_TIMESTEP_SIZE 1.d-4 y at 2.d0 y
+  MAXIMUM_TIMESTEP_SIZE 1.d0 y at 2.001d0 y
+END
+
+#=========================== regions ==========================================
+REGION all
+  COORDINATES
+    -1.d20 -1.d20 -1.d20
+     1.d20  1.d20  1.d20
+  /
+END
+
+REGION Gabbro
+  COORDINATES
+    -1.d20 -1.d20 -1.d20
+     1.d20  1.d20  1.d20
+  /
+END
+
+REGION CGO
+  COORDINATES
+    0.d0 0.d0 -800.d0
+    1.5d3 1.5d3 -720.d0
+  /
+END
+
+REGION well
+  COORDINATES
+    0.d0 0.d0 -760.d0
+    1.5d3 1.5d3 -740.d0
+  /
+/
+
+REGION north
+  FACE NORTH
+  FILE mesh_ugi_north.ss
+  #COORDINATES
+    #0.d0 1.5d3 -800.d0
+    #1.5d3 1.5d3 -720.d0
+  #/
+END
+
+REGION south
+  FACE SOUTH
+  FILE mesh_ugi_south.ss
+  #COORDINATES
+  #  0.d0 0.d3 -800.d0
+  #  1.5d3 0.d3 -720.d0
+  #/
+END
+
+REGION east
+  FACE EAST
+  FILE mesh_ugi_east.ss
+  #COORDINATES
+  #  1.5d0 0.d3 -800.d0
+  #  1.5d3 1.5d3 -720.d0
+  #/
+END
+
+REGION west
+  FACE WEST
+  FILE mesh_ugi_west.ss
+  #COORDINATES
+  #  0.d0 0.d3 -800.d0
+  #  0.d3 1.5d3 -720.d0
+  #/
+END
+
+#=========================== flow conditions ==================================
+FLOW_CONDITION initial
+  TYPE
+    LIQUID_PRESSURE HYDROSTATIC
+    CO2_MASS_FRACTION DIRICHLET
+    SALT_MASS_FRACTION DIRICHLET
+#    TEMPERATURE DIRICHLET
+  /
+  DATUM 0.d0 0.d0 -700.d0
+skip
+  GRADIENT
+    TEMPERATURE 0.d0 0.d0 -0.26793525809
+  /
+noskip
+  LIQUID_PRESSURE 8300343.199d0
+  CO2_MASS_FRACTION 0.d0 
+  SALT_MASS_FRACTION 1.d-2
+#  TEMPERATURE 102.11805556
+END
+
+FLOW_CONDITION injection
+  #SYNC_TIMESTEP_WITH_UPDATE
+  #INTERPOLATION STEP
+  TYPE
+    RATE MASS_RATE
+  /
+  RATE LIST
+    TIME_UNITS y
+          #water, CO2, salt, energy (optional)
+    DATA_UNITS kg/s kg/s kg/s #MW
+    0.d0  0.d0 5.d0 0.d0				#CO2 injection for 1 yr
+	1.d0  0.d0 0d0 0.d0					#Soak for 1 yr
+	2.d0  5.0d0 0.d0 0.d0				#Inject water + EDTA for 1 yr
+	3.d0  0.d0 0.d0 0.d0	
+  /
+END
+
+FLOW_CONDITION extraction
+  #SYNC_TIMESTEP_WITH_UPDATE
+  #INTERPOLATION STEP
+  TYPE
+    RATE MASS_RATE
+  /
+  RATE LIST
+    TIME_UNITS y
+          #water, CO2, salt, energy (optional)
+    DATA_UNITS kg/s kg/s kg/s #MW
+    0.d0   0.d0 0d0 0.d0				 #Off 
+    4.d0  -1.d1 0.d0 0.d0 #0.d0 	     #Extract at 4 yrs
+	10.d0   0.d0 0d0 0.d0				 #Keep extracting
+  /
+END
+
+#=========================== transport conditions =============================
+TRANSPORT_CONDITION background_conc
+  TYPE ZERO_GRADIENT
+  TIME_UNITS yr
+  CONSTRAINT_LIST
+    0.d0 initial_constraint
+  /
+END
+
+TRANSPORT_CONDITION EDTA_injection
+  TYPE DIRICHLET
+  TIME_UNITS y
+  CONSTRAINT_LIST
+    0.d0 initial_constraint
+	2.d0 EDTA_injection
+	3.d0 initial_constraint
+  /
+END
+
+TRANSPORT_CONDITION extraction
+  TYPE DIRICHLET
+  TIME_UNITS yr
+  CONSTRAINT_LIST
+    0.d0 initial_constraint
+  /	
+END
+
+#=========================== constraints ======================================
+CONSTRAINT initial_constraint
+  CONCENTRATIONS
+    Al+++         8.48d-6  T
+    Ca++          2.7d-5   T
+    Fe++          1.72d-5  T
+    K+            6.01d-5  T
+    Mg++          4.53d-6  T
+    Mn++          2.57d-7  T
+    Na+           4.03d-3  T
+    SiO2(aq)      1.28d-3  T
+    Ti(OH)4(aq)   2.26d-10 T
+    H+            10.      P
+    CO2(aq)       1.d-4    T
+    Cl-           1.d-6    T
+    O2(aq)        1.d-10   T
+	EDTA----	  1.d-20   T
+	Ni++          5.1d-08  T
+	CrO4-- 		  1e-20    T
+  /
+ MINERALS
+   Calcite-kam 0.d0 1
+   Anatase 0.d0 1
+   Beidellite-Ca-kam 0.d0 1
+   Beidellite-K-kam 0.d0 1
+   Beidellite-Mg-kam 0.d0 1
+   Chalcedony-kam 0.d0 1
+   Dawsonite-kam 0.d0 1
+   Rhodochrosite-kam 0.d0 1
+   Siderite-kam 0.d0 1
+   Forsterite 0.83791 1
+   Fayalite 0.075251 1
+   Ni2SiO4 0.003652 1
+   Tephroite 0.000913 1
+   Wollastonite 0.001156 1
+   Enstatite 0.063452 1
+   Chrysotile 0.02 1
+ /
+/
+
+CONSTRAINT EDTA_injection
+  CONCENTRATIONS
+    Al+++        1.0d-10   T
+    Ca++         1.0d-10   T
+    Fe++         1.0d-10   T
+    K+           1.0d-4    Z
+    Mg++         1.0d-10   T
+    Mn++         1.0d-10   T
+    Na+          1.0d-10   T
+    SiO2(aq)     1.0d-10   T
+    Ti(OH)4(aq)  1.0d-10   T
+    H+           7.0       P
+    CO2(aq)      1.0d-10   T
+    Cl-          1.0d-10   T
+    O2(aq)       1.d-10    T
+    EDTA----     0.004545  T
+	Ni++ 		 1.0d-10   T
+	CrO4-- 		 1.0d-10   T
+ /
+/
+
+#=========================== condition couplers ===============================
+# initial condition
+INITIAL_CONDITION all
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION background_conc
+  REGION all
+END
+
+WELL_COUPLER injection
+  FLOW_CONDITION injection
+  TRANSPORT_CONDITION EDTA_injection
+  WELL well_1
+END
+
+WELL_COUPLER extraction
+  FLOW_CONDITION extraction
+  TRANSPORT_CONDITION extraction
+  WELL well_2
+END
+
+BOUNDARY_CONDITION north
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION background_conc
+  REGION north
+END
+
+BOUNDARY_CONDITION south
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION background_conc
+  REGION south
+END
+
+BOUNDARY_CONDITION east
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION background_conc
+  REGION east
+END
+
+BOUNDARY_CONDITION west
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION background_conc
+  REGION west
+END
+
+#=========================== stratigraphy couplers ============================
+STRATA
+  REGION Gabbro
+  MATERIAL Gabbro
+END
+
+STRATA
+  REGION CGO
+  MATERIAL CGO
+END
+
+#=========================== convergence criteria  ============================
+END_SUBSURFACE

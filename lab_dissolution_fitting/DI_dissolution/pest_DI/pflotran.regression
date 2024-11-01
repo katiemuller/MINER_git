@@ -1,0 +1,168 @@
+-- GENERIC: pH --
+        1:   4.0280751567983E+00
+-- CONCENTRATION: Total Ni++ --
+        1:   4.5277572753602E-06
+-- CONCENTRATION: Total Fe++ --
+        1:   3.0339034810273E-06
+-- CONCENTRATION: Total Mn++ --
+        1:   3.7846830632770E-06
+-- CONCENTRATION: Total Mg++ --
+        1:   1.3587280419591E-03
+-- CONCENTRATION: Total Ca++ --
+        1:   2.2480172603912E-05
+-- CONCENTRATION: Total H+ --
+        1:  -3.3561674234230E-02
+-- CONCENTRATION: Total SiO2(aq) --
+        1:   1.0693319015240E-02
+-- CONCENTRATION: Total CrO4-- --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: Total O2(aq) --
+        1:   1.0000000003026E-04
+-- CONCENTRATION: Total NO3- --
+        1:   1.0000000000000E-04
+-- CONCENTRATION: Total K+ --
+        1:   5.0000000000000E-02
+-- CONCENTRATION: Total H2Phth- --
+        1:   5.0000000000000E-02
+-- CONCENTRATION: Total HCO3- --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: Total Al+++ --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: Free Ni++ --
+        1:   4.5277572753462E-06
+-- CONCENTRATION: Free Fe++ --
+        1:   3.3377208443574E-12
+-- CONCENTRATION: Free Mn++ --
+        1:   3.7846820225527E-06
+-- CONCENTRATION: Free Mg++ --
+        1:   1.3587280419591E-03
+-- CONCENTRATION: Free Ca++ --
+        1:   2.2468912759491E-05
+-- CONCENTRATION: Free H+ --
+        1:   9.3739977124284E-05
+-- CONCENTRATION: Free SiO2(aq) --
+        1:   1.0693306289243E-02
+-- CONCENTRATION: Free CrO4-- --
+        1:   9.9999999823691E-21
+-- CONCENTRATION: Free O2(aq) --
+        1:   9.9241524993702E-05
+-- CONCENTRATION: Free NO3- --
+        1:   9.9988263479370E-05
+-- CONCENTRATION: Free K+ --
+        1:   4.9999999998151E-02
+-- CONCENTRATION: Free H2Phth- --
+        1:   3.2483699816101E-02
+-- CONCENTRATION: Free HCO3- --
+        1:   9.9999935239915E-21
+-- CONCENTRATION: Free Al+++ --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: OH- --
+        1:   1.0788850044347E-10
+-- CONCENTRATION: Cr+++ --
+        1:   1.7631089226874E-29
+-- CONCENTRATION: HPhth-- --
+        1:   1.3795601641800E-03
+-- CONCENTRATION: Phth--- --
+        1:   1.6136740019719E-02
+-- CONCENTRATION: CaNO3+ --
+        1:   1.1259810563403E-08
+-- CONCENTRATION: CaOH+ --
+        1:   3.3857681466258E-14
+-- CONCENTRATION: FeOH+ --
+        1:   1.1259657177430E-17
+-- CONCENTRATION: Fe(OH)3- --
+        1:   4.0520563979594E-31
+-- CONCENTRATION: Fe(OH)4-- --
+        1:   4.3226556294471E-42
+-- CONCENTRATION: Fe(OH)2(aq) --
+        1:   9.5411412335759E-25
+-- CONCENTRATION: Fe+++ --
+        1:   9.6499088563622E-09
+-- CONCENTRATION: Fe(OH)2+ --
+        1:   2.3478671801563E-06
+-- CONCENTRATION: FeOH++ --
+        1:   6.6465820177277E-07
+-- CONCENTRATION: FeNO3++ --
+        1:   9.6487762927799E-12
+-- CONCENTRATION: Fe(OH)4- --
+        1:   3.1392350788120E-14
+-- CONCENTRATION: Fe(OH)3(aq) --
+        1:   1.1715172341104E-08
+-- CONCENTRATION: KOH(aq) --
+        1:   1.8494609295685E-12
+-- CONCENTRATION: MgCO3(aq) --
+        1:   6.4760085609343E-27
+-- CONCENTRATION: MnOH+ --
+        1:   1.0377782253360E-12
+-- CONCENTRATION: Mn2(OH)3+ --
+        1:   2.1891940796006E-23
+-- CONCENTRATION: Mn(OH)2(aq) --
+        1:   2.7175635630658E-20
+-- CONCENTRATION: Mn(OH)3- --
+        1:   2.7192858807706E-28
+-- CONCENTRATION: Mn2OH+++ --
+        1:   4.2085641496332E-18
+-- CONCENTRATION: Mn(OH)4-- --
+        1:   2.4565749814989E-38
+-- CONCENTRATION: Mn+++ --
+        1:   2.9376672239359E-15
+-- CONCENTRATION: MnO4-- --
+        1:   1.8725070166149E-26
+-- CONCENTRATION: NO2- --
+        1:   5.8445665931117E-18
+-- CONCENTRATION: HNO3(aq) --
+        1:   4.6706128425884E-10
+-- CONCENTRATION: NH3(aq) --
+        1:   7.5576540934082E-63
+-- CONCENTRATION: Ni(OH)2(aq) --
+        1:   5.2702771075182E-18
+-- CONCENTRATION: Ni(OH)3- --
+        1:   5.6873323463588E-25
+-- CONCENTRATION: Ni2OH+++ --
+        1:   4.3635648126181E-18
+-- CONCENTRATION: HSiO3- --
+        1:   1.2725860650303E-08
+-- CONCENTRATION: H6(H2SiO4)4-- --
+        1:   3.4087750288329E-14
+-- CONCENTRATION: H4(H2SiO4)4---- --
+        1:   1.9442345361376E-28
+-- CONCENTRATION: H2SiO4-- --
+        1:   1.4916341585046E-17
+-- VOLUME_FRACTION: Forsterite VF --
+        1:   8.3790734434555E-01
+-- VOLUME_FRACTION: Fayalite VF --
+        1:   7.5250993666575E-02
+-- VOLUME_FRACTION: Ni2SiO4 VF --
+        1:   3.6519913182522E-03
+-- VOLUME_FRACTION: Tephroite VF --
+        1:   9.1291484463449E-04
+-- VOLUME_FRACTION: Wollastonite VF --
+        1:   1.1559503929406E-03
+-- VOLUME_FRACTION: Enstatite VF --
+        1:   6.3451999989417E-02
+-- VOLUME_FRACTION: Chrysotile VF --
+        1:   1.9999999988559E-02
+-- RATE: Forsterite Rate --
+        1:  -6.9185696359354E-07
+-- RATE: Fayalite Rate --
+        1:  -1.5801580000000E-09
+-- RATE: Ni2SiO4 Rate --
+        1:  -2.3247508585067E-09
+-- RATE: Tephroite Rate --
+        1:  -1.9433090487806E-09
+-- RATE: Wollastonite Rate --
+        1:  -1.4219727985365E-08
+-- RATE: Enstatite Rate --
+        1:  -3.8482805297774E-12
+-- RATE: Chrysotile Rate --
+        1:  -1.2220307032794E-12
+-- DISCRETE: Material ID --
+        1:         1
+-- SOLUTION: Transport --
+   Time (seconds):   2.2095140997862E-02
+   Time Steps:           37
+   Newton Iterations:          138
+   Linear Solver Iterations:          138
+   Time Step Cuts:            0
+   Solution 2-Norm:   6.0592184877573E-02
+   Residual 2-Norm:   4.4370913139323E-22

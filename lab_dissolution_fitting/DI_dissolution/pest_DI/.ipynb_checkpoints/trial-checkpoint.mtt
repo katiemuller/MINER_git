@@ -1,0 +1,62 @@
+ PARAMETER STATISTICAL MATRICES: CASE trial
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ forsterite_r      dgr             1.005232E-02      1199.26    
+ fayalite_rat      dgr             1.000000E-10     9.336577E-05
+ ni2sio4_rate      dgr             7.572448E-03      1103.58    
+ tephroite_ra      dgr             1.000735E-02      22.3129    
+ wollastonite      dgr             1.000314E-02      3.91049    
+ enstatite_ra      dgr             9.645325E-03      42.1030    
+ chrysotile_r      dgr             1.038032E-02      370.246    
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+              forsterite_r fayalite_rat ni2sio4_rate tephroite_ra wollastonite enstatite_ra chrysotile_r
+ forsterite_r   1.4382E+06   1.0256E-09  -8.1365E+05   -524.8       -1973.       1.7456E+04    5017.    
+ fayalite_rat   1.0256E-09   8.7172E-09   6.5132E-10  -5.4227E-12   5.4851E-13  -2.0154E-11   9.4001E-11
+ ni2sio4_rate  -8.1365E+05   6.5132E-10   1.2179E+06  -1.5652E+04   -537.7      -4.2749E+04   2.6321E+05
+ tephroite_ra   -524.8      -5.4227E-12  -1.5652E+04    497.9        73.55        829.5       -8261.    
+ wollastonite   -1973.       5.4851E-13   -537.7        73.55        15.29        81.01       -1212.    
+ enstatite_ra   1.7456E+04  -2.0154E-11  -4.2749E+04    829.5        81.01        1773.      -1.3843E+04
+ chrysotile_r    5017.       9.4001E-11   2.6321E+05   -8261.       -1212.      -1.3843E+04   1.3708E+05
+
+
+ Parameter correlation coefficient matrix ----->
+
+              forsterite_r fayalite_rat ni2sio4_rate tephroite_ra wollastonite enstatite_ra chrysotile_r
+ forsterite_r    1.000       9.1600E-09  -0.6148      -1.9613E-02  -0.4207       0.3457       1.1299E-02
+ fayalite_rat   9.1600E-09    1.000       6.3213E-09  -2.6030E-09   1.5023E-09  -5.1269E-09   2.7193E-09
+ ni2sio4_rate  -0.6148       6.3213E-09    1.000      -0.6356      -0.1246      -0.9200       0.6442    
+ tephroite_ra  -1.9613E-02  -2.6030E-09  -0.6356        1.000       0.8429       0.8830      -0.9999    
+ wollastonite  -0.4207       1.5023E-09  -0.1246       0.8429        1.000       0.4920      -0.8369    
+ enstatite_ra   0.3457      -5.1269E-09  -0.9200       0.8830       0.4920        1.000      -0.8880    
+ chrysotile_r   1.1299E-02   2.7193E-09   0.6442      -0.9999      -0.8369      -0.8880        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4     Vector_5     Vector_6     Vector_7   
+ forsterite_r  -8.8216E-12  -5.9763E-05   1.6075E-04  -1.4930E-03  -0.2039      -0.6372      -0.7432    
+ fayalite_rat   -1.000       1.4710E-07  -2.1370E-10  -4.5462E-13  -7.6033E-15  -2.0696E-15  -1.1482E-16
+ ni2sio4_rate  -8.9231E-11  -6.0553E-04   8.1320E-04  -2.4506E-02  -0.3463      -0.6629       0.6634    
+ tephroite_ra   1.4674E-07   0.9976       3.1988E-02  -6.5997E-03  -5.5742E-02   2.3540E-02  -4.9481E-03
+ wollastonite   4.8631E-09   3.1614E-02  -0.9960       8.2699E-02  -1.4099E-02   3.5223E-03   4.6449E-04
+ enstatite_ra  -1.0437E-09  -7.2174E-03  -8.2133E-02  -0.9948      -4.0626E-02   3.8238E-02  -1.9655E-02
+ chrysotile_r   8.9520E-09   6.0833E-02  -1.6738E-02  -5.3023E-02   0.9130      -0.3906       8.4446E-02
+
+
+ Eigenvalues ----->
+
+                8.7196E-09   3.3691E-05   3.3824E-03    6.772       3.7264E+04   5.9386E+05   2.1644E+06

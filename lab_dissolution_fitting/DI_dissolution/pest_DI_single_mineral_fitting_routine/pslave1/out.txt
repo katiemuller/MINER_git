@@ -1,0 +1,561 @@
+ PSLAVE version 17.6. Watermark Numerical Computing.
+
+ Enter command to run model: 
+ Waiting for signal that PEST is alive ....
+ Note: this may take until end of current optimisation iteration if you are
+       restarting a lost slave in mid-PEST run too soon after it was lost.
+
+ Waiting for PEST....
+ PEST is alive: waiting for command to run model ....
+ (Press <Ctl-C> if you wish to stop PSLAVE execution.)
+ PEST is alive: waiting for command to run model ....
+
+ Running model ....
+
+================================
+  PFLOTRAN Development Version
+================================
+
+"grid_structured_type" set to default value.
+Opening hdf5 file: /home/mull128/projects/MINER/analysis/MINER_Diss_EDTA/output-Diss_EDTA/pflotran_inout/parameter.h5
+pflotran card:: EOS
+"EOS,WATER,DENSITY,CONSTANT units" set to default value.
+pflotran card:: NUMERICAL_METHODS
+pflotran card:: REGRESSION
+pflotran card:: SPECIFIED_VELOCITY
+pflotran card:: DBASE_FILENAME
+pflotran card:: CHEMISTRY
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+pflotran card:: GRID
+pflotran card:: FLUID_PROPERTY
+"FLUID_PROPERTY,diffusion_coefficient units" set to default value.
+pflotran card:: MATERIAL_PROPERTY
+  Name :: soil1
+"MATERIAL_PROPERTY,ROCK_DENSITY units" set to default value.
+pflotran card:: OUTPUT
+pflotran card:: TIME
+pflotran card:: REGION
+all
+pflotran card:: REGION
+pt
+pflotran card:: CONSTRAINT
+initial
+Constraint Species: Ni++
+Constraint Species: Fe++
+Constraint Species: Mn++
+Constraint Species: Mg++
+Constraint Species: Ca++
+Constraint Species: H+
+Constraint Species: SiO2(aq)
+Constraint Species: CrO4--
+Constraint Species: O2(aq)
+Constraint Species: NO3-
+Constraint Species: H2Phth-
+Constraint Species: K+
+Constraint Species: HCO3-
+Constraint Species: Al+++
+Constraint Minerals: Forsterite
+"Forsterite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Fayalite
+"Fayalite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Ni2SiO4
+"Ni2SiO4 SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Tephroite
+"Tephroite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Wollastonite
+"Wollastonite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Enstatite
+"Enstatite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Chrysotile
+"Chrysotile SPECIFIC SURFACE_AREA UNITS" set to default value.
+pflotran card:: INITIAL_CONDITION
+"Initial Condition name" set to default value.
+pflotran card:: OBSERVATION
+pflotran card:: TRANSPORT_CONDITION
+initial
+pflotran card:: STRATA
+pflotran card:: END_SUBSURFACE
+Domain Bounds (x y z):
+    0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+    5.5000000000E-02  5.5000000000E-02  5.5000000000E-02
+ Extent of Gridded Domain
+  X: 0.0000000000000000 - 5.5000000000000000E-002
+  Y: 0.0000000000000000 - 5.5000000000000000E-002
+  Z: 0.0000000000000000 - 5.5000000000000000E-002
+
+  Setting up TRAN Realization
+  Finished setting up TRAN Realization
+Default HDF5 method is used in Initialization
+
+ Requested processors and decomposition =     1, npx,y,z=   -1  -1  -1
+ Actual decomposition: npx,y,z=    1   1   1
+
+mode = Reactive Transport
+  Beginning setup of TRAN SNES
+  Finished setting up TRAN SNES
+
+TRAN Time Stepper SNES
+      maximum number of steps: 999999
+constant time steps threshold: 5
+       maximum number of cuts: 16
+             reduction factor: 5.000000E-01
+        maximum growth factor: 2.000000E+00
+                 acceleration: on
+       acceleration threshold: 5
+       number of ramp entries: 5
+                ramp entry #1: 2.0000
+                ramp entry #2: 2.0000
+                ramp entry #3: 2.0000
+                ramp entry #4: 2.0000
+                ramp entry #5: 2.0000
+                ramp entry #6: 1.8000
+                ramp entry #7: 1.6000
+                ramp entry #8: 1.4000
+                ramp entry #9: 1.2000
+               ramp entry #10: 1.0000
+               ramp entry #11: 1.0000
+               ramp entry #12: 1.0000
+               ramp entry #13: 1.0000
+
+TRAN Newton Solver
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-08
+                         stol: 1.000000E-08
+                         dtol: 1.000000E+04
+                      maxnorm: 1.000000E+20
+                    inftolres: -9.990000E+02
+                    inftolupd: -9.990000E+02
+                 inftolrelupd: -9.990000E+02
+                 inftolsclres: -9.990000E+02
+                     max iter: 50
+                     min iter: 1
+                         maxf: 10000
+                  matrix type: baij
+         precond. matrix type: baij
+               inexact newton: off
+            print convergence: on
+   print detailed convergence: off
+          check infinity norm: on
+
+TRAN Linear Solver
+                       solver: preonly
+               preconditioner: lu
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-05
+                         dtol: 1.000000E+04
+            maximum iteration: 10000
+
+
+ Finished Initialization
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 7.54E-09 2x: 1.14E+02 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  2 2r: 7.53E-09 2x: 1.08E+02 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  3 2r: 7.53E-09 2x: 1.03E+02 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  4 2r: 7.53E-09 2x: 9.78E+01 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  5 2r: 7.52E-09 2x: 9.50E+01 2u: 7.13E+00 ir: 5.25E-09 iu: 5.00E+00 rsn:   0
+  6 2r: 5.24E-09 2x: 9.39E+01 2u: 5.12E+00 ir: 3.66E-09 iu: 5.00E+00 rsn:   0
+  7 2r: 1.50E-08 2x: 9.36E+01 2u: 2.42E+00 ir: 1.05E-08 iu: 2.29E+00 rsn:   0
+  8 2r: 4.06E-09 2x: 9.39E+01 2u: 7.46E-01 ir: 2.83E-09 iu: 6.66E-01 rsn:   0
+  9 2r: 6.35E-10 2x: 9.40E+01 2u: 3.55E-01 ir: 4.43E-10 iu: 3.50E-01 rsn:   0
+ 10 2r: 2.41E-11 2x: 9.40E+01 2u: 7.78E-02 ir: 1.68E-11 iu: 7.78E-02 rsn:   0
+ 11 2r: 3.83E-14 2x: 9.40E+01 2u: 3.19E-03 ir: 2.67E-14 iu: 3.19E-03 rsn:   0
+ 12 2r: 1.45E-19 2x: 9.40E+01 2u: 5.08E-06 ir: 1.08E-19 iu: 5.08E-06 rsn: rtol
+
+ Step      1 Time=  2.77778E-04 Dt=  2.77778E-04 [hr] conv_reason: 3
+  newton =  12 [      12] linear =    12 [        12] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 12 / 12
+  --> SNES Residual: 0.144811E-18 0.144811E-18 0.108420E-18
+  --> max change:  dcmx=   4.2216E-07  dc/dt=   4.2216E-07 [mol/s]
+                  dvfmx=   7.3296E-10 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.24E-09 2x: 9.36E+01 2u: 8.66E-01 ir: 1.56E-09 iu: 5.00E-01 rsn:   0
+  2 2r: 9.81E-11 2x: 9.37E+01 2u: 1.56E-01 ir: 6.85E-11 iu: 9.02E-02 rsn:   0
+  3 2r: 2.12E-13 2x: 9.37E+01 2u: 7.48E-03 ir: 1.48E-13 iu: 4.32E-03 rsn:   0
+  4 2r: 1.03E-18 2x: 9.37E+01 2u: 1.62E-05 ir: 7.12E-19 iu: 9.36E-06 rsn: rtol
+
+ Step      2 Time=  4.16667E-04 Dt=  1.38889E-04 [hr] conv_reason: 3
+  newton =   4 [      16] linear =     4 [        16] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.103208E-17 0.103208E-17 0.712446E-18
+  --> max change:  dcmx=   2.1095E-07  dc/dt=   4.2190E-07 [mol/s]
+                  dvfmx=   3.6648E-10 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.17E-09 2x: 9.32E+01 2u: 1.15E+00 ir: 2.22E-09 iu: 6.67E-01 rsn:   0
+  2 2r: 2.19E-10 2x: 9.33E+01 2u: 2.50E-01 ir: 1.53E-10 iu: 1.44E-01 rsn:   0
+  3 2r: 1.25E-12 2x: 9.33E+01 2u: 1.99E-02 ir: 8.71E-13 iu: 1.15E-02 rsn:   0
+  4 2r: 4.14E-17 2x: 9.33E+01 2u: 1.15E-04 ir: 2.89E-17 iu: 6.63E-05 rsn: rtol
+
+ Step      3 Time=  6.94444E-04 Dt=  2.77778E-04 [hr] conv_reason: 3
+  newton =   4 [      20] linear =     4 [        20] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.413736E-16 0.413736E-16 0.288759E-16
+  --> max change:  dcmx=   4.2164E-07  dc/dt=   4.2164E-07 [mol/s]
+                  dvfmx=   7.3296E-10 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.00E-09 2x: 9.27E+01 2u: 1.39E+00 ir: 2.80E-09 iu: 8.01E-01 rsn:   0
+  2 2r: 3.60E-10 2x: 9.28E+01 2u: 3.31E-01 ir: 2.51E-10 iu: 1.91E-01 rsn:   0
+  3 2r: 3.71E-12 2x: 9.28E+01 2u: 3.60E-02 ir: 2.59E-12 iu: 2.08E-02 rsn:   0
+  4 2r: 4.07E-16 2x: 9.28E+01 2u: 3.79E-04 ir: 2.84E-16 iu: 2.19E-04 rsn:   0
+  5 2r: 5.57E-20 2x: 9.28E+01 2u: 4.14E-08 ir: 5.42E-20 iu: 2.40E-08 rsn: rtol
+
+ Step      4 Time=  1.25000E-03 Dt=  5.55556E-04 [hr] conv_reason: 3
+  newton =   5 [      25] linear =     5 [        25] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.556609E-19 0.556609E-19 0.542101E-19
+  --> max change:  dcmx=   8.4225E-07  dc/dt=   4.2113E-07 [mol/s]
+                  dvfmx=   1.4659E-09 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.60E-09 2x: 9.22E+01 2u: 1.54E+00 ir: 3.21E-09 iu: 8.92E-01 rsn:   0
+  2 2r: 4.78E-10 2x: 9.23E+01 2u: 3.87E-01 ir: 3.34E-10 iu: 2.23E-01 rsn:   0
+  3 2r: 6.87E-12 2x: 9.23E+01 2u: 5.02E-02 ir: 4.80E-12 iu: 2.90E-02 rsn:   0
+  4 2r: 1.48E-15 2x: 9.23E+01 2u: 7.41E-04 ir: 1.03E-15 iu: 4.29E-04 rsn:   0
+  5 2r: 5.50E-20 2x: 9.23E+01 2u: 1.59E-07 ir: 5.42E-20 iu: 9.21E-08 rsn: rtol
+
+ Step      5 Time=  2.36111E-03 Dt=  1.11111E-03 [hr] conv_reason: 3
+  newton =   5 [      30] linear =     5 [        30] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.549633E-19 0.549633E-19 0.542101E-19
+  --> max change:  dcmx=   1.6804E-06  dc/dt=   4.2010E-07 [mol/s]
+                  dvfmx=   2.9318E-09 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.96E-09 2x: 9.16E+01 2u: 1.63E+00 ir: 3.47E-09 iu: 9.47E-01 rsn:   0
+  2 2r: 5.58E-10 2x: 9.18E+01 2u: 4.20E-01 ir: 3.89E-10 iu: 2.43E-01 rsn:   0
+  3 2r: 9.55E-12 2x: 9.18E+01 2u: 5.99E-02 ir: 6.67E-12 iu: 3.47E-02 rsn:   0
+  4 2r: 2.93E-15 2x: 9.18E+01 2u: 1.06E-03 ir: 2.05E-15 iu: 6.14E-04 rsn:   0
+  5 2r: 7.96E-22 2x: 9.18E+01 2u: 3.24E-07 ir: 7.13E-22 iu: 1.89E-07 rsn: rtol
+
+ Step      6 Time=  4.58333E-03 Dt=  2.22222E-03 [hr] conv_reason: 3
+  newton =   5 [      35] linear =     5 [        35] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.796375E-21 0.796375E-21 0.713030E-21
+  --> max change:  dcmx=   3.3444E-06  dc/dt=   4.1805E-07 [mol/s]
+                  dvfmx=   5.8637E-09 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.16E-09 2x: 9.11E+01 2u: 1.68E+00 ir: 3.62E-09 iu: 9.81E-01 rsn:   0
+  2 2r: 6.04E-10 2x: 9.13E+01 2u: 4.37E-01 ir: 4.22E-10 iu: 2.53E-01 rsn:   0
+  3 2r: 1.13E-11 2x: 9.14E+01 2u: 6.55E-02 ir: 7.91E-12 iu: 3.80E-02 rsn:   0
+  4 2r: 4.19E-15 2x: 9.14E+01 2u: 1.27E-03 ir: 2.92E-15 iu: 7.40E-04 rsn:   0
+  5 2r: 7.24E-21 2x: 9.14E+01 2u: 4.65E-07 ir: 6.78E-21 iu: 2.74E-07 rsn: rtol
+
+ Step      7 Time=  9.02778E-03 Dt=  4.44444E-03 [hr] conv_reason: 3
+  newton =   5 [      40] linear =     5 [        40] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.724273E-20 0.724273E-20 0.677626E-20
+  --> max change:  dcmx=   6.6236E-06  dc/dt=   4.1398E-07 [mol/s]
+                  dvfmx=   1.1727E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.24E-09 2x: 9.07E+01 2u: 1.71E+00 ir: 3.70E-09 iu: 1.01E+00 rsn:   0
+  2 2r: 6.29E-10 2x: 9.08E+01 2u: 4.46E-01 ir: 4.39E-10 iu: 2.59E-01 rsn:   0
+  3 2r: 1.24E-11 2x: 9.09E+01 2u: 6.83E-02 ir: 8.62E-12 iu: 3.98E-02 rsn:   0
+  4 2r: 5.02E-15 2x: 9.09E+01 2u: 1.38E-03 ir: 3.51E-15 iu: 8.13E-04 rsn:   0
+  5 2r: 4.04E-21 2x: 9.09E+01 2u: 5.52E-07 ir: 3.39E-21 iu: 3.31E-07 rsn: rtol
+
+ Step      8 Time=  1.79167E-02 Dt=  8.88889E-03 [hr] conv_reason: 3
+  newton =   5 [      45] linear =     5 [        45] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.404401E-20 0.404401E-20 0.338813E-20
+  --> max change:  dcmx=   1.2990E-05  dc/dt=   4.0592E-07 [mol/s]
+                  dvfmx=   2.3455E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.23E-09 2x: 9.02E+01 2u: 1.74E+00 ir: 3.74E-09 iu: 1.04E+00 rsn:   0
+  2 2r: 6.42E-10 2x: 9.04E+01 2u: 4.49E-01 ir: 4.48E-10 iu: 2.61E-01 rsn:   0
+  3 2r: 1.29E-11 2x: 9.04E+01 2u: 6.92E-02 ir: 9.01E-12 iu: 4.07E-02 rsn:   0
+  4 2r: 5.50E-15 2x: 9.04E+01 2u: 1.42E-03 ir: 3.84E-15 iu: 8.53E-04 rsn:   0
+  5 2r: 3.68E-21 2x: 9.04E+01 2u: 5.89E-07 ir: 3.39E-21 iu: 3.64E-07 rsn: rtol
+
+ Step      9 Time=  3.56944E-02 Dt=  1.77778E-02 [hr] conv_reason: 3
+  newton =   5 [      50] linear =     5 [        50] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.367551E-20 0.367551E-20 0.338813E-20
+  --> max change:  dcmx=   2.4973E-05  dc/dt=   3.9021E-07 [mol/s]
+                  dvfmx=   4.6910E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.13E-09 2x: 8.97E+01 2u: 1.76E+00 ir: 3.76E-09 iu: 1.09E+00 rsn:   0
+  2 2r: 6.49E-10 2x: 8.99E+01 2u: 4.47E-01 ir: 4.53E-10 iu: 2.63E-01 rsn:   0
+  3 2r: 1.32E-11 2x: 8.99E+01 2u: 6.89E-02 ir: 9.21E-12 iu: 4.12E-02 rsn:   0
+  4 2r: 5.76E-15 2x: 8.99E+01 2u: 1.41E-03 ir: 4.02E-15 iu: 8.74E-04 rsn:   0
+  5 2r: 1.44E-21 2x: 8.99E+01 2u: 5.89E-07 ir: 8.47E-22 iu: 3.82E-07 rsn: rtol
+
+ Step     10 Time=  7.12500E-02 Dt=  3.55556E-02 [hr] conv_reason: 3
+  newton =   5 [      55] linear =     5 [        55] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.143566E-20 0.143566E-20 0.847033E-21
+  --> max change:  dcmx=   5.1423E-05  dc/dt=   4.0175E-07 [mol/s]
+                  dvfmx=   9.3819E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.88E-09 2x: 8.93E+01 2u: 1.83E+00 ir: 3.77E-09 iu: 1.18E+00 rsn:   0
+  2 2r: 6.50E-10 2x: 8.94E+01 2u: 4.40E-01 ir: 4.56E-10 iu: 2.63E-01 rsn:   0
+  3 2r: 1.33E-11 2x: 8.95E+01 2u: 6.70E-02 ir: 9.33E-12 iu: 4.14E-02 rsn:   0
+  4 2r: 5.90E-15 2x: 8.95E+01 2u: 1.36E-03 ir: 4.13E-15 iu: 8.85E-04 rsn:   0
+  5 2r: 1.27E-21 2x: 8.95E+01 2u: 5.72E-07 ir: 8.44E-22 iu: 3.92E-07 rsn: rtol
+
+ Step     11 Time=  1.42361E-01 Dt=  7.11111E-02 [hr] conv_reason: 3
+  newton =   5 [      60] linear =     5 [        60] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.126830E-20 0.126830E-20 0.843724E-21
+  --> max change:  dcmx=   1.0943E-04  dc/dt=   4.2744E-07 [mol/s]
+                  dvfmx=   1.8764E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.53E-09 2x: 8.89E+01 2u: 2.11E+00 ir: 3.78E-09 iu: 1.40E+00 rsn:   0
+  2 2r: 6.57E-10 2x: 8.91E+01 2u: 6.91E-01 ir: 4.59E-10 iu: 5.85E-01 rsn:   0
+  3 2r: 1.95E-11 2x: 8.91E+01 2u: 2.61E-01 ir: 1.42E-11 iu: 2.55E-01 rsn:   0
+  4 2r: 2.28E-13 2x: 8.91E+01 2u: 3.97E-02 ir: 2.28E-13 iu: 3.87E-02 rsn:   0
+  5 2r: 8.73E-17 2x: 8.91E+01 2u: 7.93E-04 ir: 8.73E-17 iu: 7.69E-04 rsn: rtol
+
+ Step     12 Time=  2.84583E-01 Dt=  1.42222E-01 [hr] conv_reason: 3
+  newton =   5 [      65] linear =     5 [        65] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.872984E-16 0.872984E-16 0.872984E-16
+  --> max change:  dcmx=   2.3780E-04  dc/dt=   4.6445E-07 [mol/s]
+                  dvfmx=   3.7528E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.63E-08 2x: 8.89E+01 2u: 6.27E+00 ir: 2.76E-08 iu: 5.00E+00 rsn:   0
+  2 2r: 2.47E-06 2x: 8.96E+01 2u: 7.09E+00 ir: 1.75E-06 iu: 5.00E+00 rsn:   0
+  3 2r: 1.56E-06 2x: 9.09E+01 2u: 5.06E+00 ir: 1.10E-06 iu: 5.00E+00 rsn:   0
+  4 2r: 5.72E-07 2x: 9.31E+01 2u: 4.07E+00 ir: 4.05E-07 iu: 3.29E+00 rsn:   0
+  5 2r: 2.09E-07 2x: 9.62E+01 2u: 5.14E+00 ir: 1.47E-07 iu: 3.91E+00 rsn:   0
+  6 2r: 7.47E-08 2x: 9.92E+01 2u: 4.82E+00 ir: 5.27E-08 iu: 3.87E+00 rsn:   0
+  7 2r: 2.54E-08 2x: 1.02E+02 2u: 4.90E+00 ir: 1.79E-08 iu: 3.60E+00 rsn:   0
+  8 2r: 7.58E-09 2x: 1.05E+02 2u: 3.54E+00 ir: 5.34E-09 iu: 3.02E+00 rsn:   0
+  9 2r: 1.55E-09 2x: 1.07E+02 2u: 2.56E+00 ir: 1.09E-09 iu: 1.91E+00 rsn:   0
+ 10 2r: 1.16E-10 2x: 1.07E+02 2u: 7.71E-01 ir: 8.19E-11 iu: 6.31E-01 rsn:   0
+ 11 2r: 7.99E-13 2x: 1.07E+02 2u: 6.67E-02 ir: 5.63E-13 iu: 5.53E-02 rsn:   0
+ 12 2r: 3.85E-17 2x: 1.07E+02 2u: 2.45E-03 ir: 2.71E-17 iu: 2.42E-03 rsn: rtol
+
+ Step     13 Time=  5.69028E-01 Dt=  2.84444E-01 [hr] conv_reason: 3
+  newton =  12 [      77] linear =    12 [        77] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 12 / 12
+  --> SNES Residual: 0.384725E-16 0.384725E-16 0.271332E-16
+  --> max change:  dcmx=   3.6155E-04  dc/dt=   3.5308E-07 [mol/s]
+                  dvfmx=   7.5055E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.98E-09 2x: 1.09E+02 2u: 2.43E+00 ir: 1.81E-09 iu: 1.94E+00 rsn:   0
+  2 2r: 9.56E-11 2x: 1.08E+02 2u: 6.76E-01 ir: 9.55E-11 iu: 5.16E-01 rsn:   0
+  3 2r: 3.10E-13 2x: 1.08E+02 2u: 6.36E-02 ir: 3.10E-13 iu: 5.77E-02 rsn:   0
+  4 2r: 3.29E-18 2x: 1.08E+02 2u: 9.73E-04 ir: 3.29E-18 iu: 9.69E-04 rsn: rtol
+
+ Step     14 Time=  7.11250E-01 Dt=  1.42222E-01 [hr] conv_reason: 3
+  newton =   4 [      81] linear =     4 [        81] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.328664E-17 0.328664E-17 0.328664E-17
+  --> max change:  dcmx=   1.7977E-04  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   3.7528E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.90E-09 2x: 1.10E+02 2u: 2.74E+00 ir: 2.45E-09 iu: 2.32E+00 rsn:   0
+  2 2r: 1.90E-10 2x: 1.09E+02 2u: 7.52E-01 ir: 1.89E-10 iu: 5.93E-01 rsn:   0
+  3 2r: 1.39E-12 2x: 1.09E+02 2u: 1.30E-01 ir: 1.39E-12 iu: 1.15E-01 rsn:   0
+  4 2r: 7.71E-17 2x: 1.09E+02 2u: 7.22E-03 ir: 7.71E-17 iu: 7.21E-03 rsn: rtol
+
+ Step     15 Time=  9.95694E-01 Dt=  2.84444E-01 [hr] conv_reason: 3
+  newton =   4 [      85] linear =     4 [        85] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.770523E-16 0.770523E-16 0.770523E-16
+  --> max change:  dcmx=   3.5957E-04  dc/dt=   3.5114E-07 [mol/s]
+                  dvfmx=   7.5055E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.08E-09 2x: 1.10E+02 2u: 2.80E+00 ir: 2.98E-09 iu: 2.46E+00 rsn:   0
+  2 2r: 2.98E-10 2x: 1.10E+02 2u: 7.51E-01 ir: 2.85E-10 iu: 6.73E-01 rsn:   0
+  3 2r: 3.39E-12 2x: 1.10E+02 2u: 1.92E-01 ir: 3.39E-12 iu: 1.68E-01 rsn:   0
+  4 2r: 4.99E-16 2x: 1.10E+02 2u: 2.37E-03 ir: 4.99E-16 iu: 2.04E-03 rsn:   0
+  5 2r: 6.80E-23 2x: 1.10E+02 2u: 1.49E-04 ir: 5.29E-23 iu: 1.49E-04 rsn: rtol
+
+ Step     16 Time=  1.56458E+00 Dt=  5.68889E-01 [hr] conv_reason: 3
+  newton =   5 [      90] linear =     5 [        90] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.679915E-22 0.679915E-22 0.529396E-22
+  --> max change:  dcmx=   7.2925E-04  dc/dt=   3.5608E-07 [mol/s]
+                  dvfmx=   1.5011E-06 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.80E-09 2x: 1.10E+02 2u: 1.07E+00 ir: 1.29E-09 iu: 9.23E-01 rsn:   0
+  2 2r: 2.97E-11 2x: 1.10E+02 2u: 1.77E-01 ir: 2.47E-11 iu: 1.42E-01 rsn:   0
+  3 2r: 1.50E-14 2x: 1.10E+02 2u: 1.63E-02 ir: 1.49E-14 iu: 1.57E-02 rsn:   0
+  4 2r: 5.45E-21 2x: 1.10E+02 2u: 4.45E-04 ir: 5.44E-21 iu: 4.45E-04 rsn: rtol
+
+ Step     17 Time=  2.00000E+00 Dt=  4.35417E-01 [hr] conv_reason: 3
+  newton =   4 [      94] linear =     4 [        94] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.544695E-20 0.544695E-20 0.544037E-20
+  --> max change:  dcmx=   5.6111E-04  dc/dt=   3.5796E-07 [mol/s]
+                  dvfmx=   1.1489E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.19E-09 2x: 1.08E+02 2u: 5.39E+00 ir: 3.10E-09 iu: 5.00E+00 rsn:   0
+  2 2r: 2.21E-10 2x: 1.08E+02 2u: 1.03E+00 ir: 1.60E-10 iu: 9.38E-01 rsn:   0
+  3 2r: 1.01E-12 2x: 1.09E+02 2u: 9.64E-01 ir: 9.49E-13 iu: 9.63E-01 rsn:   0
+  4 2r: 3.44E-17 2x: 1.09E+02 2u: 9.47E-01 ir: 3.44E-17 iu: 9.47E-01 rsn: rtol
+
+ Step     18 Time=  3.13778E+00 Dt=  1.13778E+00 [hr] conv_reason: 3
+  newton =   4 [      98] linear =     4 [        98] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.343917E-16 0.343917E-16 0.343545E-16
+  --> max change:  dcmx=   1.4649E-03  dc/dt=   3.5763E-07 [mol/s]
+                  dvfmx=   3.0022E-06 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.90E-09 2x: 1.10E+02 2u: 9.34E-01 ir: 1.46E-09 iu: 7.78E-01 rsn:   0
+  2 2r: 2.84E-11 2x: 1.10E+02 2u: 1.29E-01 ir: 2.03E-11 iu: 8.51E-02 rsn:   0
+  3 2r: 7.78E-15 2x: 1.10E+02 2u: 8.57E-03 ir: 6.34E-15 iu: 8.29E-03 rsn:   0
+  4 2r: 8.96E-22 2x: 1.10E+02 2u: 5.55E-05 ir: 8.76E-22 iu: 5.54E-05 rsn: rtol
+
+ Step     19 Time=  4.00000E+00 Dt=  8.62222E-01 [hr] conv_reason: 3
+  newton =   4 [     102] linear =     4 [       102] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.895928E-21 0.895928E-21 0.875984E-21
+  --> max change:  dcmx=   1.1056E-03  dc/dt=   3.5617E-07 [mol/s]
+                  dvfmx=   2.2751E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.81E-09 2x: 1.08E+02 2u: 3.43E+00 ir: 2.96E-09 iu: 2.98E+00 rsn:   0
+  2 2r: 1.62E-10 2x: 1.09E+02 2u: 1.02E+00 ir: 1.21E-10 iu: 9.90E-01 rsn:   0
+  3 2r: 3.59E-13 2x: 1.09E+02 2u: 8.29E-01 ir: 2.51E-13 iu: 8.29E-01 rsn:   0
+  4 2r: 2.26E-18 2x: 1.10E+02 2u: 6.06E-01 ir: 2.06E-18 iu: 6.06E-01 rsn: rtol
+
+ Step     20 Time=  6.00000E+00 Dt=  2.00000E+00 [hr] conv_reason: 3
+  newton =   4 [     106] linear =     4 [       106] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.226048E-17 0.226048E-17 0.206166E-17
+  --> max change:  dcmx=   2.5477E-03  dc/dt=   3.5385E-07 [mol/s]
+                  dvfmx=   5.2773E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.45E-09 2x: 1.09E+02 2u: 3.12E+00 ir: 1.91E-09 iu: 2.85E+00 rsn:   0
+  2 2r: 5.23E-11 2x: 1.09E+02 2u: 9.89E-01 ir: 4.07E-11 iu: 9.84E-01 rsn:   0
+  3 2r: 2.74E-14 2x: 1.10E+02 2u: 8.29E-01 ir: 1.98E-14 iu: 8.29E-01 rsn:   0
+  4 2r: 8.18E-21 2x: 1.10E+02 2u: 6.05E-01 ir: 6.32E-21 iu: 6.05E-01 rsn: rtol
+
+ Step     21 Time=  8.00000E+00 Dt=  2.00000E+00 [hr] conv_reason: 3
+  newton =   4 [     110] linear =     4 [       110] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.817561E-20 0.817561E-20 0.632297E-20
+  --> max change:  dcmx=   2.5298E-03  dc/dt=   3.5136E-07 [mol/s]
+                  dvfmx=   5.2773E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.10E-09 2x: 1.10E+02 2u: 1.24E+00 ir: 1.62E-09 iu: 1.10E+00 rsn:   0
+  2 2r: 3.36E-11 2x: 1.10E+02 2u: 1.73E-01 ir: 2.65E-11 iu: 1.60E-01 rsn:   0
+  3 2r: 9.93E-15 2x: 1.10E+02 2u: 1.63E-02 ir: 7.52E-15 iu: 1.63E-02 rsn:   0
+  4 2r: 9.31E-22 2x: 1.10E+02 2u: 1.15E-04 ir: 6.37E-22 iu: 1.15E-04 rsn: rtol
+
+ Step     22 Time=  1.02756E+01 Dt=  2.27556E+00 [hr] conv_reason: 3
+  newton =   4 [     114] linear =     4 [       114] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.931152E-21 0.931152E-21 0.636929E-21
+  --> max change:  dcmx=   2.8763E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   6.0044E-06 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.51E-09 2x: 1.12E+02 2u: 2.30E+00 ir: 2.68E-09 iu: 2.10E+00 rsn:   0
+  2 2r: 1.21E-10 2x: 1.12E+02 2u: 1.37E-01 ir: 9.59E-11 iu: 7.75E-02 rsn:   0
+  3 2r: 1.78E-13 2x: 1.11E+02 2u: 1.58E-01 ir: 1.39E-13 iu: 1.58E-01 rsn:   0
+  4 2r: 4.60E-19 2x: 1.11E+02 2u: 1.21E-02 ir: 3.42E-19 iu: 1.21E-02 rsn: rtol
+
+ Step     23 Time=  1.48267E+01 Dt=  4.55111E+00 [hr] conv_reason: 3
+  newton =   4 [     118] linear =     4 [       118] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.460298E-18 0.460298E-18 0.342038E-18
+  --> max change:  dcmx=   5.7526E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   1.2009E-05 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.71E-09 2x: 1.13E+02 2u: 2.45E+00 ir: 1.99E-09 iu: 2.28E+00 rsn:   0
+  2 2r: 5.82E-11 2x: 1.13E+02 2u: 1.45E-01 ir: 4.48E-11 iu: 1.17E-01 rsn:   0
+  3 2r: 3.17E-14 2x: 1.13E+02 2u: 2.84E-01 ir: 2.50E-14 iu: 2.84E-01 rsn:   0
+  4 2r: 1.31E-20 2x: 1.13E+02 2u: 3.21E-02 ir: 1.04E-20 iu: 3.21E-02 rsn: rtol
+
+ Step     24 Time=  1.98267E+01 Dt=  5.00000E+00 [hr] conv_reason: 3
+  newton =   4 [     122] linear =     4 [       122] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.131103E-19 0.131103E-19 0.104374E-19
+  --> max change:  dcmx=   6.3200E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   1.3193E-05 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.05E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.76E-09 2x: 1.16E+02 2u: 3.95E+00 ir: 1.20E-09 iu: 3.37E+00 rsn:   0
+  2 2r: 1.82E-11 2x: 1.13E+02 2u: 5.00E+00 ir: 1.25E-11 iu: 5.00E+00 rsn:   0
+  3 2r: 2.17E-15 2x: 1.14E+02 2u: 8.76E-01 ir: 1.73E-15 iu: 8.76E-01 rsn:   0
+  4 2r: 9.45E-23 2x: 1.14E+02 2u: 7.00E-01 ir: 6.62E-23 iu: 7.00E-01 rsn: rtol
+
+ Step     25 Time=  2.40000E+01 Dt=  4.17333E+00 [hr] conv_reason: 3
+  newton =   4 [     126] linear =     4 [       126] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.944688E-22 0.944688E-22 0.661744E-22
+  --> max change:  dcmx=   5.2751E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   1.1012E-05 dvf/dt=   7.3296E-10 [1/s]
+
+
+PMCSubsurfaceTransport
+ Total Time: 5.1027E-01 seconds
+
+ TRAN TS SNES steps = 25  newton = 126  linear = 126  cuts = 0
+ TRAN TS SNES Wasted Linear Iterations = 0
+ TRAN TS SNES Wasted Newton Iterations = 0
+ TRAN TS SNES time = 0.4 seconds
+
+ --> write regression output file: pflotran.regression
+
+ Wall Clock Time:  6.1013E-01 [sec]   1.0169E-02 [min]   1.6948E-04 [hr]
+
+ Model completed: waiting for command to run model again.
+ (Press <Ctl-C> if you wish to stop PSLAVE execution.)
+
+ PEST has finished execution. Slave terminating.

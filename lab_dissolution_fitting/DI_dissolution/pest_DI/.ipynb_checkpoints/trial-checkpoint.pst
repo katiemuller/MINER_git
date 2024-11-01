@@ -1,0 +1,62 @@
+pcf
+* control data
+norestart  estimation
+# Number of parameters, number of observations, number of parameter groups, number of prior information, number of observation groups
+    7     30     1     0     1
+# Number of pairs of input template files, number of model output reading instruction files, 
+    1     1 single point   1   0   0
+  5.0   2.0   0.3  0.03    10
+  3.0   3.0 0.001  0
+  0.1
+   30  0.01     3     3  0.01     3
+    1     1     1
+* parameter groups
+dgr         relative 0.01  0.0  switch  2.0 parabolic
+* parameter data
+forsterite_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1
+fayalite_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1
+Ni2SiO4_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1
+tephroite_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1
+wollastonite_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1        
+enstatite_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1 
+chrysotile_rate_constant          none  relative    1e-2      1e-10   2 dgr             1e-1        0.0000      1        
+* observation groups
+obsgroup
+* observation data
+# Obs Name  Observation        Weight    Group
+obs1   0.00000000000000000000    1.0    obsgroup
+obs2   0.00000202595562415170    1.0    obsgroup
+obs3   0.00000234979307263277    1.0    obsgroup
+obs4   0.00000318186229078131    1.0    obsgroup
+obs5   0.00000294011325036580    1.0    obsgroup
+obs6   0.00000454729311393669    1.0    obsgroup
+obs7   0.00000000000000000000    1.0    obsgroup
+obs8   0.00000143154581446756    1.0    obsgroup
+obs9   0.00000056015230557921    1.0    obsgroup
+obs10   0.00000026710147807783    1.0    obsgroup
+obs11   0.00000009250053639812    1.0    obsgroup
+obs12   0.00000000000000000000    1.0    obsgroup
+obs13   0.00000000000000000000    1.0    obsgroup
+obs14   0.00000073457574835750    1.0    obsgroup
+obs15   0.00000119456581591384    1.0    obsgroup
+obs16   0.00000153369852610018    1.0    obsgroup
+obs17   0.00000159129323476350    1.0    obsgroup
+obs18   0.00000299619022958073    1.0    obsgroup
+obs19   0.00001104907477054499    1.0    obsgroup
+obs20   0.00031521879767744680    1.0    obsgroup
+obs21   0.00043340598377706018    1.0    obsgroup
+obs22   0.00062495354185219303    1.0    obsgroup
+obs23   0.00067484571555559772    1.0    obsgroup
+obs24   0.00155619761357882712    1.0    obsgroup
+obs25   0.00000867627707353996    1.0    obsgroup
+obs26   0.00002445694646306687    1.0    obsgroup
+obs27   0.00001974412061675137    1.0    obsgroup
+obs28   0.00001767305748648542    1.0    obsgroup
+obs29   0.00002483081653568038    1.0    obsgroup
+obs30   0.00002730914820089645    1.0    obsgroup
+* model command line
+./trial.sh
+* model input/output
+pflotran.tpl  pflotran.in
+trial.ins output_processed.txt
+* prior information

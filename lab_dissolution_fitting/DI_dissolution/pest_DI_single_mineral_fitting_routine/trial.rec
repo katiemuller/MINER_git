@@ -1,0 +1,276 @@
+                        PEST RUN RECORD: CASE trial
+
+
+ PEST Version: 17.6
+
+
+ PEST run mode:-
+
+    Parameter estimation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :     1
+    Number of adjustable parameters                :     1
+    Number of parameter groups                     :     1
+    Number of observations                         :     6
+    Number of prior estimates                      :     0
+
+
+ Model command line(s):-
+
+    ./trial.sh
+
+
+ Jacobian command line:-
+
+    na
+
+
+ Model interface files:-
+
+    Templates:
+       pflotran.tpl
+    for model input files:
+       pflotran.in
+
+    (Parameter values written using single precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       trial.ins
+    for reading model output files:
+       output_processed.txt
+
+
+ PEST-to-model message file:-
+
+    na
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ dgr          relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ ni2sio4_rate none              relative   1.430000E-07   1.000000E-10    2.00000    
+
+ Name         Group          Scale         Offset        Model command number
+ ni2sio4_rate dgr          1.000000E-05    0.00000            1
+
+
+ Prior information:-
+
+    No prior information supplied
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  obs1                   -20.0000          100.0       obsgroup    
+  obs2                   -5.69337          100.0       obsgroup    
+  obs3                   -5.62897          100.0       obsgroup    
+  obs4                   -5.49732          100.0       obsgroup    
+  obs5                   -5.53164          100.0       obsgroup    
+  obs6                   -5.34225          100.0       obsgroup    
+
+
+ Control settings:-
+
+    Initial lambda                                               :  5.0000    
+    Lambda adjustment factor                                     :  2.0000    
+    Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+    Limiting relative phi reduction between lambdas              : 3.00000E-02
+    Maximum trial lambdas per iteration                          :  10
+    Forgive model run failure during lamda testing               : no
+    Forgive model run failure during Jacobian runs               : no
+
+    Perform Broyden's update of Jacobian matrix                  : no
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   : na
+    Maximum relative parameter change (relative-limited changes) :  3.0000
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : 0.10000             
+    Iteration at which to first consider derivatives switch      :   1
+
+    Relative phi reduction indicating convergence                : 0.10000E-01
+    Number of phi values required within this range              :   3
+    Maximum number of consecutive failures to lower phi          :   3
+    Minimal relative parameter change indicating convergence     : 0.10000E-01
+    Number of consecutive iterations with minimal param change   :   3
+    Maximum number of optimisation iterations                    :  30
+
+    Attempt automatic user intervention                          : no
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options: -
+
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+                             OPTIMISATION RECORD
+
+
+ INITIAL CONDITIONS: 
+    Sum of squared weighted residuals (ie phi) =  2.92082E+05
+
+       Current parameter values
+       ni2sio4_rate    1.430000E-07
+
+
+ OPTIMISATION ITERATION NO.        : 1
+    Model calls so far             : 1
+    Starting phi for this iteration:  2.92082E+05
+
+        Lambda =   5.0000     ----->
+           Phi =  2.91684E+05  (  0.999 of starting phi)
+
+        Lambda =   2.5000     ----->
+           Phi =  2.91684E+05  (  0.999 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  2.91684E+05
+    Relative phi reduction between optimisation iterations less than 0.1000
+    Switch to higher order derivatives calculation
+
+       Current parameter values                 Previous parameter values
+       ni2sio4_rate    5.720000E-07             ni2sio4_rate     1.430000E-07
+    Maximum relative change:  3.000     ["ni2sio4_rate"]
+
+
+ OPTIMISATION ITERATION NO.        : 2
+    Model calls so far             : 4
+    Starting phi for this iteration:  2.91684E+05
+
+        Lambda =   2.5000     ----->
+           Phi =  2.90110E+05  (  0.995 of starting phi)
+
+        Lambda =   1.2500     ----->
+           Phi =  2.90110E+05  (  0.995 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  2.90110E+05
+
+       Current parameter values                 Previous parameter values
+       ni2sio4_rate    2.288000E-06             ni2sio4_rate     5.720000E-07
+    Maximum relative change:  3.000     ["ni2sio4_rate"]
+
+    Optimisation complete: the  3 lowest phi's are within a relative distance
+                           of eachother of 1.000E-02
+    Total model calls:      8
+
+    The model has been run one final time using best parameters. 
+    Thus all model input files contain best parameter values, and model 
+    output files contain model results based on these parameters.
+
+
+                             OPTIMISATION RESULTS
+
+
+ Parameters ----->
+
+ Parameter        Estimated         95% percent confidence limits
+                  value             lower limit       upper limit
+  ni2sio4_rate   2.288000E-06      -7.181369E-04      7.227129E-04
+
+ Note: confidence limits provide only an indication of parameter uncertainty.
+       They rely on a linearity assumption which  may not extend as far in 
+       parameter space as the confidence limits themselves - see PEST manual.
+
+ See file trial.sen for parameter sensitivities.
+
+
+ Observations ----->
+
+ Observation            Measured       Calculated     Residual       Weight     Group
+                        value          value
+ obs1                  -20.0000       -20.0000        0.00000        100.0      obsgroup    
+ obs2                  -5.69337       -8.42525        2.73188        100.0      obsgroup    
+ obs3                  -5.62897       -8.12555        2.49658        100.0      obsgroup    
+ obs4                  -5.49732       -7.95026        2.45294        100.0      obsgroup    
+ obs5                  -5.53164       -7.82586        2.29422        100.0      obsgroup    
+ obs6                  -5.34225       -7.35086        2.00861        100.0      obsgroup    
+
+ See file trial.res for more details of residuals in graph-ready format.
+
+ See file trial.seo for composite observation sensitivities.
+
+
+ Objective function ----->
+
+   Sum of squared weighted residuals (ie phi)                =  2.9011E+05
+
+
+ Correlation Coefficient ----->
+
+   Correlation coefficient                                   =  0.99863    
+
+
+ Analysis of residuals ----->
+
+   All residuals:-
+      Number of residuals with non-zero weight                       =     6
+      Mean value of non-zero weighted residuals                      =   199.7    
+      Maximum weighted residual [observation "obs2"]                 =   273.2    
+      Minimum weighted residual [observation "obs1"]                 =   0.000    
+      Standard variance of weighted residuals                        =  5.8022E+04
+      Standard error of weighted residuals                           =   240.9    
+
+      Note: the above variance was obtained by dividing the objective 
+      function by the number of system degrees of freedom (ie. number of 
+      observations with non-zero weight plus number of prior information 
+      articles with non-zero weight minus the number of adjustable parameters.)
+      If the degrees of freedom is negative the divisor becomes 
+      the number of observations with non-zero weight plus the number of 
+      prior information items with non-zero weight.
+
+
+ K-L information statistics ----->
+
+
+   AIC   =   68.71753    
+   AICC  =   72.71753    
+   BIC   =   68.30105    
+   KIC   =   79.42190    
+
+ Parameter covariance matrix ----->
+
+              ni2sio4_rate
+ ni2sio4_rate   7.8519E-08
+
+
+ Parameter correlation coefficient matrix ----->
+
+              ni2sio4_rate
+ ni2sio4_rate    1.000    
+
+
+ Normalized eigenvectors of parameter covariance matrix ----->
+
+               Vector_1   
+ ni2sio4_rate    1.000    
+
+
+ Eigenvalues ----->
+
+                7.8519E-08

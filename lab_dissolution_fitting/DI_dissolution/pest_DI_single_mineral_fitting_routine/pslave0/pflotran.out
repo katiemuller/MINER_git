@@ -1,0 +1,1341 @@
+
+================================
+  PFLOTRAN Development Version
+================================
+
+"grid_structured_type" set to default value.
+Opening hdf5 file: /home/mull128/projects/MINER/analysis/MINER_Diss_EDTA/output-Diss_EDTA/pflotran_inout/parameter.h5
+pflotran card:: EOS
+"EOS,WATER,DENSITY,CONSTANT units" set to default value.
+pflotran card:: NUMERICAL_METHODS
+pflotran card:: REGRESSION
+pflotran card:: SPECIFIED_VELOCITY
+pflotran card:: DBASE_FILENAME
+pflotran card:: CHEMISTRY
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+"CHEMISTRY,MINERAL_KINETICS,PREFACTOR,ACTIVATION_ENERGY units" set to default value.
+pflotran card:: GRID
+pflotran card:: FLUID_PROPERTY
+"FLUID_PROPERTY,diffusion_coefficient units" set to default value.
+pflotran card:: MATERIAL_PROPERTY
+  Name :: soil1
+"MATERIAL_PROPERTY,ROCK_DENSITY units" set to default value.
+pflotran card:: OUTPUT
+pflotran card:: TIME
+pflotran card:: REGION
+all
+pflotran card:: REGION
+pt
+pflotran card:: CONSTRAINT
+initial
+Constraint Species: Ni++
+Constraint Species: Fe++
+Constraint Species: Mn++
+Constraint Species: Mg++
+Constraint Species: Ca++
+Constraint Species: H+
+Constraint Species: SiO2(aq)
+Constraint Species: CrO4--
+Constraint Species: O2(aq)
+Constraint Species: NO3-
+Constraint Species: H2Phth-
+Constraint Species: K+
+Constraint Species: HCO3-
+Constraint Species: Al+++
+Constraint Minerals: Forsterite
+"Forsterite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Fayalite
+"Fayalite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Ni2SiO4
+"Ni2SiO4 SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Tephroite
+"Tephroite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Wollastonite
+"Wollastonite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Enstatite
+"Enstatite SPECIFIC SURFACE_AREA UNITS" set to default value.
+Constraint Minerals: Chrysotile
+"Chrysotile SPECIFIC SURFACE_AREA UNITS" set to default value.
+pflotran card:: INITIAL_CONDITION
+"Initial Condition name" set to default value.
+pflotran card:: OBSERVATION
+pflotran card:: TRANSPORT_CONDITION
+initial
+pflotran card:: STRATA
+pflotran card:: END_SUBSURFACE
+
+ ! ************************************************************************** !
+
+ Initial Basis
+
+ Primary Species:
+  Ni++
+    Charge:   2.00
+    Molar Mass:   58.6900 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  Fe++
+    Charge:   2.00
+    Molar Mass:   55.8470 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  Mn++
+    Charge:   2.00
+    Molar Mass:   54.9380 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  Mg++
+    Charge:   2.00
+    Molar Mass:   24.3050 [g/mol]
+    Debye-Huckel a0:    8.0000 [Angstrom]
+
+  Ca++
+    Charge:   2.00
+    Molar Mass:   40.0780 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  H+
+    Charge:   1.00
+    Molar Mass:    1.0079 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+
+  SiO2(aq)
+    Charge:   0.00
+    Molar Mass:   60.0843 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  CrO4--
+    Charge:  -2.00
+    Molar Mass:  115.9937 [g/mol]
+    Debye-Huckel a0:    4.0000 [Angstrom]
+
+  O2(aq)
+    Charge:   0.00
+    Molar Mass:   31.9988 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  NO3-
+    Charge:  -1.00
+    Molar Mass:   62.0049 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  NO3-                            
+        -1.0000  H+                              
+        -1.0000  H2O                             
+         1.0000  NH3(aq)                         
+         2.0000  O2(g)                           
+      logK:   -62.8645   -56.3035   -48.6988   -41.6846   -34.6926   -29.0797   -24.4213   -20.3964
+
+  K+
+    Charge:   1.00
+    Molar Mass:   39.0983 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  H2Phth-
+    Charge:  -1.00
+    Molar Mass:  166.1300 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  HCO3-
+    Charge:  -1.00
+    Molar Mass:   61.0171 [g/mol]
+    Debye-Huckel a0:    4.0000 [Angstrom]
+
+  Al+++
+    Charge:   3.00
+    Molar Mass:   26.9815 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+
+
+ Secondary Species:
+  OH-
+    Charge:  -1.00
+    Molar Mass:   17.0073 [g/mol]
+    Debye-Huckel a0:    3.5000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  OH-                             
+        -1.0000  H+                              
+         1.0000  H2O                             
+      logK:    14.9398    13.9951    13.0272    12.2551    11.6308    11.2836    11.1675    11.3002
+
+  Cr+++
+    Charge:   3.00
+    Molar Mass:   51.9961 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Cr+++                           
+        -2.5000  H2O                             
+        -0.7500  O2(g)                           
+         1.0000  CrO4--                          
+         5.0000  H+                              
+      logK:   -11.8220   -10.5579    -9.3721    -8.5560    -8.0734    -8.0319    -8.3521    -9.0879
+
+  Fe+++
+    Charge:   3.00
+    Molar Mass:   55.8470 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Fe+++                           
+        -0.5000  H2O                             
+         0.2500  O2(g)                           
+         1.0000  Fe++                            
+         1.0000  H+                              
+      logK:    -9.3541    -7.7654    -5.8970    -4.1507    -2.3795    -0.9223     0.3233     1.4215
+
+  HNO3(aq)
+    Charge:   0.00
+    Molar Mass:   63.0129 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  HNO3(aq)                        
+         1.0000  H+                              
+         1.0000  NO3-                            
+      logK:     1.5366     1.3025     0.9479     0.5427     0.0413    -0.4704    -1.0297    -1.7216
+
+  NH3(aq)
+    Charge:   0.00
+    Molar Mass:   17.0306 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  HPhth--
+    Charge:  -1.00
+    Molar Mass:  166.1300 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  HPhth--                         
+        -1.0000  H+                              
+         1.0000  H2Phth-                         
+      logK:   500.0000     5.4000   500.0000   500.0000   500.0000   500.0000   500.0000   500.0000
+
+  Phth---
+    Charge:  -2.00
+    Molar Mass:  165.1300 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Phth---                         
+        -1.0000  H+                              
+         1.0000  HPhth--                         
+      logK:   500.0000     2.9600   500.0000   500.0000   500.0000   500.0000   500.0000   500.0000
+
+  Fe(OH)2(aq)
+    Charge:   0.00
+    Molar Mass:   89.8617 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Fe(OH)2(aq)                     
+        -2.0000  H+                              
+         1.0000  Fe++                            
+         2.0000  H2O                             
+      logK:   500.0000    20.6000   500.0000   500.0000   500.0000   500.0000   500.0000   500.0000
+
+  Fe(OH)3(aq)
+    Charge:   0.00
+    Molar Mass:  106.8690 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Fe(OH)3(aq)                     
+        -3.0000  H+                              
+         1.0000  Fe+++                           
+         3.0000  H2O                             
+      logK:   500.0000    12.0000   500.0000   500.0000   500.0000   500.0000   500.0000   500.0000
+
+  MgCO3(aq)
+    Charge:   0.00
+    Molar Mass:   84.3142 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  MgCO3(aq)                       
+        -1.0000  H+                              
+         1.0000  HCO3-                           
+         1.0000  Mg++                            
+      logK:     7.7399     7.3499     6.9262     6.5632     6.2045     5.8725     5.4900     4.9530
+
+
+ Gas Components:
+  O2(g)
+    Molar Mass:   31.9988 [g/mol]
+    Gas Reaction: 
+        -1.0000  O2(g)                           
+         1.0000  O2(aq)                          
+      logK:    -2.6567    -2.8983    -3.0633    -3.1076    -3.0354    -2.8742    -2.6488    -2.3537
+
+
+ Minerals:
+  Forsterite
+    Molar Mass:  140.6931 [g/mol]
+    Molar Volume:  4.3790E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Forsterite                      
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+         2.0000  H2O                             
+         2.0000  Mg++                            
+      logK:    31.0538    27.8626    24.0137    20.4513    16.9413    14.1544    11.8345     9.7870
+
+  Fayalite
+    Molar Mass:  203.7771 [g/mol]
+    Molar Volume:  4.6390E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Fayalite                        
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+         2.0000  Fe++                            
+         2.0000  H2O                             
+      logK:    21.4417    19.1113    16.2310    13.5247    10.8226     8.6436     6.7937     5.1166
+
+  Ni2SiO4
+    Molar Mass:  209.4631 [g/mol]
+    Molar Volume:  4.2610E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Ni2SiO4                         
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+         2.0000  H2O                             
+         2.0000  Ni++                            
+      logK:    16.2652    14.3416    11.8964     9.5586     7.1913     5.2548     3.5858     2.0478
+
+  Tephroite
+    Molar Mass:  201.9592 [g/mol]
+    Molar Volume:  5.0000E-04 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Tephroite                       
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+         2.0000  H2O                             
+         2.0000  Mn++                            
+      logK:    25.5539    23.0781    20.0782    17.3081    14.6106    12.5070    10.8060     9.3620
+
+  Wollastonite
+    Molar Mass:  116.1617 [g/mol]
+    Molar Volume:  3.9930E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Wollastonite                    
+        -2.0000  H+                              
+         1.0000  Ca++                            
+         1.0000  H2O                             
+         1.0000  SiO2(aq)                        
+      logK:    14.8822    13.7605    12.2730    10.8315     9.3747     8.1989     7.2075     6.3148
+
+  Enstatite
+    Molar Mass:  100.3887 [g/mol]
+    Molar Volume:  3.1276E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Enstatite                       
+        -2.0000  H+                              
+         1.0000  H2O                             
+         1.0000  Mg++                            
+         1.0000  SiO2(aq)                        
+      logK:    12.5491    11.3269     9.7322     8.2108     6.6978     5.4953     4.4929     3.5985
+
+  Chrysotile
+    Molar Mass:  277.1124 [g/mol]
+    Molar Volume:  1.0850E-04 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Chrysotile                      
+        -6.0000  H+                              
+         2.0000  SiO2(aq)                        
+         3.0000  Mg++                            
+         5.0000  H2O                             
+      logK:    34.4271    31.1254    26.9983    23.1597    19.4090    16.4625    14.0146    11.8204
+
+  Fe(OH)2
+    Molar Mass:   89.8617 [g/mol]
+    Molar Volume:  2.6430E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Fe(OH)2                         
+        -2.0000  H+                              
+         1.0000  Fe++                            
+         2.0000  H2O                             
+      logK:    15.4363    13.9045    12.1560    10.5781     9.0375     7.8144     6.7914     5.8837
+
+  Fe(OH)3
+    Molar Mass:  106.8690 [g/mol]
+    Molar Volume:  3.4360E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Fe(OH)3                         
+        -3.0000  H+                              
+         1.0000  Fe+++                           
+         3.0000  H2O                             
+      logK:     6.9971     5.6556     4.1038     2.6878     1.2773     0.1146    -0.9130    -1.8839
+
+  FeO
+    Molar Mass:   71.8464 [g/mol]
+    Molar Volume:  1.2000E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  FeO                             
+        -2.0000  H+                              
+         1.0000  Fe++                            
+         1.0000  H2O                             
+      logK:    15.2277    13.5318    11.5796     9.7985     8.0384     6.6249     5.4341     4.3762
+
+  Magnesite
+    Molar Mass:   84.3142 [g/mol]
+    Molar Volume:  2.8018E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Magnesite                       
+        -1.0000  H+                              
+         1.0000  HCO3-                           
+         1.0000  Mg++                            
+      logK:     2.9734     2.2936     1.4383     0.5875    -0.3520    -1.2275    -2.1152    -3.1178
+
+  Clinochlore-14A
+    Molar Mass:  555.7973 [g/mol]
+    Molar Volume:  2.0711E-04 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Clinochlore-14A                 
+       -16.0000  H+                              
+         2.0000  Al+++                           
+         3.0000  SiO2(aq)                        
+         5.0000  Mg++                            
+        12.0000  H2O                             
+      logK:    76.7345    67.2391    55.7725    45.1520    34.6423    26.2016    19.0325    12.5384
+
+
+ Surface Complexation Reactions: None
+
+   Surface Complexes: None
+
+ Ion Exchange Reactions: None
+
+ ! ************************************************************************** !
+
+
+ ! ************************************************************************** !
+
+ Final Basis
+
+ Primary Species:
+  Ni++
+    Charge:   2.00
+    Molar Mass:   58.6900 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  Fe++
+    Charge:   2.00
+    Molar Mass:   55.8470 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  Mn++
+    Charge:   2.00
+    Molar Mass:   54.9380 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  Mg++
+    Charge:   2.00
+    Molar Mass:   24.3050 [g/mol]
+    Debye-Huckel a0:    8.0000 [Angstrom]
+
+  Ca++
+    Charge:   2.00
+    Molar Mass:   40.0780 [g/mol]
+    Debye-Huckel a0:    6.0000 [Angstrom]
+
+  H+
+    Charge:   1.00
+    Molar Mass:    1.0079 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+
+  SiO2(aq)
+    Charge:   0.00
+    Molar Mass:   60.0843 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  CrO4--
+    Charge:  -2.00
+    Molar Mass:  115.9937 [g/mol]
+    Debye-Huckel a0:    4.0000 [Angstrom]
+
+  O2(aq)
+    Charge:   0.00
+    Molar Mass:   31.9988 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  NO3-
+    Charge:  -1.00
+    Molar Mass:   62.0049 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  K+
+    Charge:   1.00
+    Molar Mass:   39.0983 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  H2Phth-
+    Charge:  -1.00
+    Molar Mass:  166.1300 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+
+  HCO3-
+    Charge:  -1.00
+    Molar Mass:   61.0171 [g/mol]
+    Debye-Huckel a0:    4.0000 [Angstrom]
+
+  Al+++
+    Charge:   3.00
+    Molar Mass:   26.9815 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+
+
+ Secondary Species:
+  OH-
+    Charge:  -1.00
+    Molar Mass:   17.0073 [g/mol]
+    Debye-Huckel a0:    3.5000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  OH-                             
+         1.0000  H2O                             
+        -1.0000  H+                              
+      logK:    14.9398    13.9951    13.0272    12.2551    11.6308    11.2836    11.1675    11.3002
+
+  Cr+++
+    Charge:   3.00
+    Molar Mass:   51.9961 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Cr+++                           
+        -2.5000  H2O                             
+         5.0000  H+                              
+         1.0000  CrO4--                          
+        -0.7500  O2(aq)                          
+      logK:    -9.8295    -8.3842    -7.0746    -6.2253    -5.7968    -5.8763    -6.3655    -7.3226
+
+  Fe+++
+    Charge:   3.00
+    Molar Mass:   55.8470 [g/mol]
+    Debye-Huckel a0:    9.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Fe+++                           
+        -0.5000  H2O                             
+         1.0000  Fe++                            
+         1.0000  H+                              
+         0.2500  O2(aq)                          
+      logK:   -10.0183    -8.4900    -6.6628    -4.9276    -3.1383    -1.6408    -0.3389     0.8331
+
+  HNO3(aq)
+    Charge:   0.00
+    Molar Mass:   63.0129 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  HNO3(aq)                        
+         1.0000  H+                              
+         1.0000  NO3-                            
+      logK:     1.5366     1.3025     0.9479     0.5427     0.0413    -0.4704    -1.0297    -1.7216
+
+  NH3(aq)
+    Charge:   0.00
+    Molar Mass:   17.0306 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  NH3(aq)                         
+         1.0000  H2O                             
+         1.0000  H+                              
+        -2.0000  O2(aq)                          
+         1.0000  NO3-                            
+      logK:    68.1779    62.1001    54.8254    47.8998    40.7634    34.8281    29.7189    25.1038
+
+  HPhth--
+    Charge:  -1.00
+    Molar Mass:  166.1300 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  HPhth--                         
+        -1.0000  H+                              
+         1.0000  H2Phth-                         
+      logK:   500.0000     5.4000   500.0000   500.0000   500.0000   500.0000   500.0000   500.0000
+
+  Phth---
+    Charge:  -2.00
+    Molar Mass:  165.1300 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Phth---                         
+        -2.0000  H+                              
+         1.0000  H2Phth-                         
+      logK:  1000.0000     8.3600  1000.0000  1000.0000  1000.0000  1000.0000  1000.0000  1000.0000
+
+  Fe(OH)2(aq)
+    Charge:   0.00
+    Molar Mass:   89.8617 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Fe(OH)2(aq)                     
+         2.0000  H2O                             
+         1.0000  Fe++                            
+        -2.0000  H+                              
+      logK:   500.0000    20.6000   500.0000   500.0000   500.0000   500.0000   500.0000   500.0000
+
+  Fe(OH)3(aq)
+    Charge:   0.00
+    Molar Mass:  106.8690 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  Fe(OH)3(aq)                     
+         2.5000  H2O                             
+         1.0000  Fe++                            
+        -2.0000  H+                              
+         0.2500  O2(aq)                          
+      logK:   489.9817     3.5100   493.3372   495.0724   496.8616   498.3591   499.6611   500.8331
+
+  MgCO3(aq)
+    Charge:   0.00
+    Molar Mass:   84.3142 [g/mol]
+    Debye-Huckel a0:    3.0000 [Angstrom]
+    Equilibrium Aqueous Reaction: 
+        -1.0000  MgCO3(aq)                       
+         1.0000  Mg++                            
+        -1.0000  H+                              
+         1.0000  HCO3-                           
+      logK:     7.7399     7.3499     6.9262     6.5632     6.2045     5.8725     5.4900     4.9530
+
+
+ Gas Components:
+  O2(g)
+    Molar Mass:   31.9988 [g/mol]
+    Gas Reaction: 
+        -1.0000  O2(g)                           
+         1.0000  O2(aq)                          
+      logK:    -2.6567    -2.8983    -3.0633    -3.1076    -3.0354    -2.8742    -2.6488    -2.3537
+
+
+ Minerals:
+  Forsterite
+    Molar Mass:  140.6931 [g/mol]
+    Molar Volume:  4.3790E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Forsterite                      
+         2.0000  H2O                             
+         2.0000  Mg++                            
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+      logK:    31.0538    27.8626    24.0137    20.4513    16.9413    14.1544    11.8345     9.7870
+
+  Fayalite
+    Molar Mass:  203.7771 [g/mol]
+    Molar Volume:  4.6390E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Fayalite                        
+         2.0000  H2O                             
+         2.0000  Fe++                            
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+      logK:    21.4417    19.1113    16.2310    13.5247    10.8226     8.6436     6.7937     5.1166
+
+  Ni2SiO4
+    Molar Mass:  209.4631 [g/mol]
+    Molar Volume:  4.2610E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Ni2SiO4                         
+         2.0000  H2O                             
+         2.0000  Ni++                            
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+      logK:    16.2652    14.3416    11.8964     9.5586     7.1913     5.2548     3.5858     2.0478
+
+  Tephroite
+    Molar Mass:  201.9592 [g/mol]
+    Molar Volume:  5.0000E-04 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Tephroite                       
+         2.0000  H2O                             
+         2.0000  Mn++                            
+        -4.0000  H+                              
+         1.0000  SiO2(aq)                        
+      logK:    25.5539    23.0781    20.0782    17.3081    14.6106    12.5070    10.8060     9.3620
+
+  Wollastonite
+    Molar Mass:  116.1617 [g/mol]
+    Molar Volume:  3.9930E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Wollastonite                    
+         1.0000  H2O                             
+         1.0000  Ca++                            
+        -2.0000  H+                              
+         1.0000  SiO2(aq)                        
+      logK:    14.8822    13.7605    12.2730    10.8315     9.3747     8.1989     7.2075     6.3148
+
+  Enstatite
+    Molar Mass:  100.3887 [g/mol]
+    Molar Volume:  3.1276E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Enstatite                       
+         1.0000  H2O                             
+         1.0000  Mg++                            
+        -2.0000  H+                              
+         1.0000  SiO2(aq)                        
+      logK:    12.5491    11.3269     9.7322     8.2108     6.6978     5.4953     4.4929     3.5985
+
+  Chrysotile
+    Molar Mass:  277.1124 [g/mol]
+    Molar Volume:  1.0850E-04 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Chrysotile                      
+         5.0000  H2O                             
+         3.0000  Mg++                            
+        -6.0000  H+                              
+         2.0000  SiO2(aq)                        
+      logK:    34.4271    31.1254    26.9983    23.1597    19.4090    16.4625    14.0146    11.8204
+
+  Fe(OH)2
+    Molar Mass:   89.8617 [g/mol]
+    Molar Volume:  2.6430E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Fe(OH)2                         
+         2.0000  H2O                             
+         1.0000  Fe++                            
+        -2.0000  H+                              
+      logK:    15.4363    13.9045    12.1560    10.5781     9.0375     7.8144     6.7914     5.8837
+
+  Fe(OH)3
+    Molar Mass:  106.8690 [g/mol]
+    Molar Volume:  3.4360E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Fe(OH)3                         
+         2.5000  H2O                             
+         1.0000  Fe++                            
+        -2.0000  H+                              
+         0.2500  O2(aq)                          
+      logK:    -3.0212    -2.8344    -2.5590    -2.2398    -1.8610    -1.5262    -1.2519    -1.0508
+
+  FeO
+    Molar Mass:   71.8464 [g/mol]
+    Molar Volume:  1.2000E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  FeO                             
+         1.0000  H2O                             
+         1.0000  Fe++                            
+        -2.0000  H+                              
+      logK:    15.2277    13.5318    11.5796     9.7985     8.0384     6.6249     5.4341     4.3762
+
+  Magnesite
+    Molar Mass:   84.3142 [g/mol]
+    Molar Volume:  2.8018E-05 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Magnesite                       
+         1.0000  Mg++                            
+        -1.0000  H+                              
+         1.0000  HCO3-                           
+      logK:     2.9734     2.2936     1.4383     0.5875    -0.3520    -1.2275    -2.1152    -3.1178
+
+  Clinochlore-14A
+    Molar Mass:  555.7973 [g/mol]
+    Molar Volume:  2.0711E-04 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  Clinochlore-14A                 
+        12.0000  H2O                             
+         5.0000  Mg++                            
+       -16.0000  H+                              
+         3.0000  SiO2(aq)                        
+         2.0000  Al+++                           
+      logK:    76.7345    67.2391    55.7725    45.1520    34.6423    26.2016    19.0325    12.5384
+
+
+ Surface Complexation Reactions: None
+
+   Surface Complexes: None
+
+ Ion Exchange Reactions: None
+
+ ! ************************************************************************** !
+
+--------------------------------------------------------------------------------
+
+    14  Primary Species
+
+              Ni++                  Fe++                  Mn++                
+              Mg++                  Ca++                  H+                  
+              SiO2(aq)              CrO4--                O2(aq)              
+              NO3-                  K+                    H2Phth-             
+              HCO3-                 Al+++               
+
+    10  Secondary Complex Species
+
+              OH-                   Cr+++                 Fe+++               
+              HNO3(aq)              NH3(aq)               HPhth--             
+              Phth---               Fe(OH)2(aq)           Fe(OH)3(aq)         
+              MgCO3(aq)           
+
+     0  Active Gas Species
+
+
+
+     1  Passive Gas Species
+
+              O2(g)               
+
+    12  Reference Minerals
+
+              Forsterite            Fayalite              Ni2SiO4             
+              Tephroite             Wollastonite          Enstatite           
+              Chrysotile            Fe(OH)2               Fe(OH)3             
+              FeO                   Magnesite             Clinochlore-14A     
+
+
+     7  Kinetic Mineral Reactions
+
+              Forsterite            Fayalite              Ni2SiO4             
+              Tephroite             Wollastonite          Enstatite           
+              Chrysotile          
+
+     0  Ion Exchange Reactions
+
+     0  Ion Exchange Cations
+--------------------------------------------------------------------------------
+Domain Bounds (x y z):
+    0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+    5.5000000000E-02  5.5000000000E-02  5.5000000000E-02
+ Extent of Gridded Domain
+  X: 0.0000000000000000 - 5.5000000000000000E-002
+  Y: 0.0000000000000000 - 5.5000000000000000E-002
+  Z: 0.0000000000000000 - 5.5000000000000000E-002
+
+  Setting up TRAN Realization
+  Finished setting up TRAN Realization
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+  Initial Condition
+
+--------------------------------------------------------------------------------
+     Transport Condition:   initial
+                  Region:   all
+--------------------------------------------------------------------------------
+
+  Transport Condition: initial
+
+  Constraint: initial
+  ----------------------------------------------------------------------------
+        iterations:    48
+                pH:   3.0551
+                pe:  17.5510
+                Eh:   1.0383
+    ionic strength:   5.0948E-02 [mol/L]
+    charge balance:   3.9451E-05
+          pressure:   1.0132E+05 [Pa]
+       temperature:    25.00 [C]
+       density H2O:  1000.00 [kg/m^3]
+ ln / activity H2O:   0.0000E+00  1.0000E+00    [---]
+ mole fraction H2O:   9.9800E-01    [---]
+ mass fraction H2O:   9.8924E-01    [---]
+  ----------------------------------------------------------------------------
+
+  primary                   free        total
+  species                   molal       molal       act coef     constraint
+  ----------------------------------------------------------------------------
+  Ni++                      1.0000E-20  1.0000E-20  1.0000E+00    total aq
+  Fe++                      3.6687E-25  1.0000E-20  1.0000E+00    total aq
+  Mn++                      1.0000E-20  1.0000E-20  1.0000E+00    total aq
+  Mg++                      1.1049E-05  1.1049E-05  1.0000E+00    total aq
+  Ca++                      8.6763E-06  8.6763E-06  1.0000E+00    total aq
+  H+                        8.8077E-04  1.0000E-04  1.0000E+00    total aq
+  SiO2(aq)                  1.0000E-02  1.0000E-02  1.0000E+00    total aq
+  CrO4--                    9.9987E-21  1.0000E-20  1.0000E+00    total aq
+  O2(aq)                    1.0000E-04  1.0000E-04  1.0000E+00    total aq
+  NO3-                      9.9996E-05  1.0000E-04  1.0000E+00    total aq
+  K+                        5.0000E-02  5.0000E-02  1.0000E+00    total aq
+  H2Phth-                   4.9498E-02  5.0000E-02  1.0000E+00    total aq
+  HCO3-                     1.0000E-20  1.0000E-20  1.0000E+00    total aq
+  Al+++                     1.0000E-20  1.0000E-20  1.0000E+00    total aq
+
+  complex                   molality    act coef        logK
+  ----------------------------------------------------------------------------
+  Phth---                   2.7852E-04  1.0000E+00    8.3600E+00
+  HPhth--                   2.2373E-04  1.0000E+00    5.4000E+00
+  HNO3(aq)                  4.3888E-09  1.0000E+00    1.3025E+00
+  OH-                       1.1483E-11  1.0000E+00    1.3995E+01
+  Fe+++                     9.9850E-21  1.0000E+00   -8.4900E+00
+  Fe(OH)3(aq)               1.4614E-23  1.0000E+00    3.5100E+00
+  Cr+++                     1.2836E-24  1.0000E+00   -8.3842E+00
+  MgCO3(aq)                 5.6048E-30  1.0000E+00    7.3499E+00
+  Fe(OH)2(aq)               1.1879E-39  1.0000E+00    2.0600E+01
+  NH3(aq)                   6.9943E-62  1.0000E+00    6.2100E+01
+
+  mineral                             log SI       Affinity     log K
+                                                   [kJ/mol]
+  ----------------------------------------------------------------------------
+  Enstatite                           -12.1733  69485.2854    1.1327E+01
+  Wollastonite                        -14.7119  83975.5910    1.3761E+01
+  Fe(OH)3                             -16.4908  94129.8344   -2.8344E+00
+  Magnesite                           -24.1951 138106.0263    2.2936E+00
+  Forsterite                          -27.5554 157286.4260    2.7863E+01
+  Chrysotile                          -31.6646 180741.7664    3.1125E+01
+  FeO                                 -31.8570 181840.0797    1.3532E+01
+  Fe(OH)2                             -32.2297 183967.4541    1.3905E+01
+  Ni2SiO4                             -44.1211 251843.2942    1.4342E+01
+  Tephroite                           -52.8576 301711.3035    2.3078E+01
+  Fayalite                            -57.7617 329704.3851    1.9111E+01
+  Clinochlore-14A                     -89.1403 508813.3539    6.7239E+01
+
+  gas              par pres [bars]  conc [mol/m^3]  log K
+  ----------------------------------------------------------------------------
+  O2(g)            7.9122E-02       3.1918E+00      -2.8983E+00
+
+
+--------------------------------------------------------------------------------
+Default HDF5 method is used in Initialization
+
+ Requested processors and decomposition =     1, npx,y,z=   -1  -1  -1
+ Actual decomposition: npx,y,z=    1   1   1
+
+mode = Reactive Transport
+  Beginning setup of TRAN SNES
+  Finished setting up TRAN SNES
+
+TRAN Time Stepper SNES
+      maximum number of steps: 999999
+constant time steps threshold: 5
+       maximum number of cuts: 16
+             reduction factor: 5.000000E-01
+        maximum growth factor: 2.000000E+00
+                 acceleration: on
+       acceleration threshold: 5
+       number of ramp entries: 5
+                ramp entry #1: 2.0000
+                ramp entry #2: 2.0000
+                ramp entry #3: 2.0000
+                ramp entry #4: 2.0000
+                ramp entry #5: 2.0000
+                ramp entry #6: 1.8000
+                ramp entry #7: 1.6000
+                ramp entry #8: 1.4000
+                ramp entry #9: 1.2000
+               ramp entry #10: 1.0000
+               ramp entry #11: 1.0000
+               ramp entry #12: 1.0000
+               ramp entry #13: 1.0000
+
+TRAN Newton Solver
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-08
+                         stol: 1.000000E-08
+                         dtol: 1.000000E+04
+                      maxnorm: 1.000000E+20
+                    inftolres: -9.990000E+02
+                    inftolupd: -9.990000E+02
+                 inftolrelupd: -9.990000E+02
+                 inftolsclres: -9.990000E+02
+                     max iter: 50
+                     min iter: 1
+                         maxf: 10000
+                  matrix type: baij
+         precond. matrix type: baij
+               inexact newton: off
+            print convergence: on
+   print detailed convergence: off
+          check infinity norm: on
+
+TRAN Linear Solver
+                       solver: preonly
+               preconditioner: lu
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-05
+                         dtol: 1.000000E+04
+            maximum iteration: 10000
+
+
+ Finished Initialization
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 7.54E-09 2x: 1.14E+02 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  2 2r: 7.53E-09 2x: 1.08E+02 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  3 2r: 7.53E-09 2x: 1.03E+02 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  4 2r: 7.53E-09 2x: 9.78E+01 2u: 8.66E+00 ir: 5.26E-09 iu: 5.00E+00 rsn:   0
+  5 2r: 7.52E-09 2x: 9.50E+01 2u: 7.13E+00 ir: 5.25E-09 iu: 5.00E+00 rsn:   0
+  6 2r: 5.24E-09 2x: 9.39E+01 2u: 5.12E+00 ir: 3.66E-09 iu: 5.00E+00 rsn:   0
+  7 2r: 1.50E-08 2x: 9.36E+01 2u: 2.41E+00 ir: 1.05E-08 iu: 2.29E+00 rsn:   0
+  8 2r: 4.06E-09 2x: 9.39E+01 2u: 7.45E-01 ir: 2.83E-09 iu: 6.66E-01 rsn:   0
+  9 2r: 6.35E-10 2x: 9.40E+01 2u: 3.55E-01 ir: 4.43E-10 iu: 3.50E-01 rsn:   0
+ 10 2r: 2.41E-11 2x: 9.40E+01 2u: 7.78E-02 ir: 1.68E-11 iu: 7.78E-02 rsn:   0
+ 11 2r: 3.83E-14 2x: 9.40E+01 2u: 3.19E-03 ir: 2.67E-14 iu: 3.19E-03 rsn:   0
+ 12 2r: 1.81E-19 2x: 9.40E+01 2u: 5.08E-06 ir: 1.08E-19 iu: 5.08E-06 rsn: rtol
+
+ Step      1 Time=  2.77778E-04 Dt=  2.77778E-04 [hr] conv_reason: 3
+  newton =  12 [      12] linear =    12 [        12] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 12 / 12
+  --> SNES Residual: 0.181471E-18 0.181471E-18 0.108420E-18
+  --> max change:  dcmx=   4.2216E-07  dc/dt=   4.2216E-07 [mol/s]
+                  dvfmx=   7.3296E-10 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.24E-09 2x: 9.36E+01 2u: 8.66E-01 ir: 1.56E-09 iu: 5.00E-01 rsn:   0
+  2 2r: 9.81E-11 2x: 9.37E+01 2u: 1.56E-01 ir: 6.85E-11 iu: 9.02E-02 rsn:   0
+  3 2r: 2.12E-13 2x: 9.37E+01 2u: 7.48E-03 ir: 1.48E-13 iu: 4.32E-03 rsn:   0
+  4 2r: 1.01E-18 2x: 9.37E+01 2u: 1.62E-05 ir: 6.99E-19 iu: 9.36E-06 rsn: rtol
+
+ Step      2 Time=  4.16667E-04 Dt=  1.38889E-04 [hr] conv_reason: 3
+  newton =   4 [      16] linear =     4 [        16] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.100659E-17 0.100659E-17 0.699166E-18
+  --> max change:  dcmx=   2.1095E-07  dc/dt=   4.2190E-07 [mol/s]
+                  dvfmx=   3.6648E-10 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.17E-09 2x: 9.32E+01 2u: 1.15E+00 ir: 2.22E-09 iu: 6.67E-01 rsn:   0
+  2 2r: 2.19E-10 2x: 9.33E+01 2u: 2.50E-01 ir: 1.53E-10 iu: 1.44E-01 rsn:   0
+  3 2r: 1.25E-12 2x: 9.33E+01 2u: 1.99E-02 ir: 8.71E-13 iu: 1.15E-02 rsn:   0
+  4 2r: 4.14E-17 2x: 9.33E+01 2u: 1.15E-04 ir: 2.89E-17 iu: 6.63E-05 rsn: rtol
+
+ Step      3 Time=  6.94444E-04 Dt=  2.77778E-04 [hr] conv_reason: 3
+  newton =   4 [      20] linear =     4 [        20] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.413776E-16 0.413776E-16 0.288759E-16
+  --> max change:  dcmx=   4.2164E-07  dc/dt=   4.2164E-07 [mol/s]
+                  dvfmx=   7.3296E-10 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.00E-09 2x: 9.27E+01 2u: 1.39E+00 ir: 2.80E-09 iu: 8.01E-01 rsn:   0
+  2 2r: 3.60E-10 2x: 9.28E+01 2u: 3.31E-01 ir: 2.51E-10 iu: 1.91E-01 rsn:   0
+  3 2r: 3.71E-12 2x: 9.28E+01 2u: 3.60E-02 ir: 2.59E-12 iu: 2.08E-02 rsn:   0
+  4 2r: 4.07E-16 2x: 9.28E+01 2u: 3.79E-04 ir: 2.84E-16 iu: 2.19E-04 rsn:   0
+  5 2r: 5.71E-20 2x: 9.28E+01 2u: 4.14E-08 ir: 5.42E-20 iu: 2.40E-08 rsn: rtol
+
+ Step      4 Time=  1.25000E-03 Dt=  5.55556E-04 [hr] conv_reason: 3
+  newton =   5 [      25] linear =     5 [        25] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.570862E-19 0.570862E-19 0.542101E-19
+  --> max change:  dcmx=   8.4225E-07  dc/dt=   4.2113E-07 [mol/s]
+                  dvfmx=   1.4659E-09 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.60E-09 2x: 9.21E+01 2u: 1.54E+00 ir: 3.21E-09 iu: 8.92E-01 rsn:   0
+  2 2r: 4.78E-10 2x: 9.23E+01 2u: 3.87E-01 ir: 3.34E-10 iu: 2.23E-01 rsn:   0
+  3 2r: 6.87E-12 2x: 9.23E+01 2u: 5.02E-02 ir: 4.80E-12 iu: 2.90E-02 rsn:   0
+  4 2r: 1.48E-15 2x: 9.23E+01 2u: 7.41E-04 ir: 1.03E-15 iu: 4.29E-04 rsn:   0
+  5 2r: 3.97E-21 2x: 9.23E+01 2u: 1.59E-07 ir: 3.95E-21 iu: 9.21E-08 rsn: rtol
+
+ Step      5 Time=  2.36111E-03 Dt=  1.11111E-03 [hr] conv_reason: 3
+  newton =   5 [      30] linear =     5 [        30] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.396986E-20 0.396986E-20 0.395268E-20
+  --> max change:  dcmx=   1.6804E-06  dc/dt=   4.2010E-07 [mol/s]
+                  dvfmx=   2.9318E-09 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.96E-09 2x: 9.16E+01 2u: 1.63E+00 ir: 3.47E-09 iu: 9.47E-01 rsn:   0
+  2 2r: 5.58E-10 2x: 9.18E+01 2u: 4.20E-01 ir: 3.89E-10 iu: 2.43E-01 rsn:   0
+  3 2r: 9.55E-12 2x: 9.18E+01 2u: 5.99E-02 ir: 6.67E-12 iu: 3.47E-02 rsn:   0
+  4 2r: 2.93E-15 2x: 9.18E+01 2u: 1.06E-03 ir: 2.05E-15 iu: 6.14E-04 rsn:   0
+  5 2r: 1.36E-20 2x: 9.18E+01 2u: 3.24E-07 ir: 1.36E-20 iu: 1.89E-07 rsn: rtol
+
+ Step      6 Time=  4.58333E-03 Dt=  2.22222E-03 [hr] conv_reason: 3
+  newton =   5 [      35] linear =     5 [        35] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.135926E-19 0.135926E-19 0.135525E-19
+  --> max change:  dcmx=   3.3444E-06  dc/dt=   4.1805E-07 [mol/s]
+                  dvfmx=   5.8637E-09 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.16E-09 2x: 9.11E+01 2u: 1.68E+00 ir: 3.62E-09 iu: 9.81E-01 rsn:   0
+  2 2r: 6.04E-10 2x: 9.13E+01 2u: 4.37E-01 ir: 4.22E-10 iu: 2.53E-01 rsn:   0
+  3 2r: 1.13E-11 2x: 9.13E+01 2u: 6.55E-02 ir: 7.91E-12 iu: 3.80E-02 rsn:   0
+  4 2r: 4.19E-15 2x: 9.13E+01 2u: 1.27E-03 ir: 2.92E-15 iu: 7.40E-04 rsn:   0
+  5 2r: 3.02E-21 2x: 9.13E+01 2u: 4.65E-07 ir: 2.91E-21 iu: 2.74E-07 rsn: rtol
+
+ Step      7 Time=  9.02778E-03 Dt=  4.44444E-03 [hr] conv_reason: 3
+  newton =   5 [      40] linear =     5 [        40] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.301769E-20 0.301769E-20 0.291250E-20
+  --> max change:  dcmx=   6.6236E-06  dc/dt=   4.1398E-07 [mol/s]
+                  dvfmx=   1.1727E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.24E-09 2x: 9.06E+01 2u: 1.71E+00 ir: 3.70E-09 iu: 1.01E+00 rsn:   0
+  2 2r: 6.29E-10 2x: 9.08E+01 2u: 4.46E-01 ir: 4.39E-10 iu: 2.59E-01 rsn:   0
+  3 2r: 1.24E-11 2x: 9.09E+01 2u: 6.82E-02 ir: 8.62E-12 iu: 3.98E-02 rsn:   0
+  4 2r: 5.02E-15 2x: 9.09E+01 2u: 1.38E-03 ir: 3.51E-15 iu: 8.13E-04 rsn:   0
+  5 2r: 3.82E-21 2x: 9.09E+01 2u: 5.51E-07 ir: 3.39E-21 iu: 3.31E-07 rsn: rtol
+
+ Step      8 Time=  1.79167E-02 Dt=  8.88889E-03 [hr] conv_reason: 3
+  newton =   5 [      45] linear =     5 [        45] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.381975E-20 0.381975E-20 0.338813E-20
+  --> max change:  dcmx=   1.2990E-05  dc/dt=   4.0592E-07 [mol/s]
+                  dvfmx=   2.3455E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.23E-09 2x: 9.02E+01 2u: 1.74E+00 ir: 3.74E-09 iu: 1.04E+00 rsn:   0
+  2 2r: 6.42E-10 2x: 9.03E+01 2u: 4.49E-01 ir: 4.48E-10 iu: 2.61E-01 rsn:   0
+  3 2r: 1.29E-11 2x: 9.04E+01 2u: 6.92E-02 ir: 9.01E-12 iu: 4.07E-02 rsn:   0
+  4 2r: 5.50E-15 2x: 9.04E+01 2u: 1.42E-03 ir: 3.84E-15 iu: 8.53E-04 rsn:   0
+  5 2r: 1.98E-21 2x: 9.04E+01 2u: 5.87E-07 ir: 1.69E-21 iu: 3.64E-07 rsn: rtol
+
+ Step      9 Time=  3.56944E-02 Dt=  1.77778E-02 [hr] conv_reason: 3
+  newton =   5 [      50] linear =     5 [        50] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.197743E-20 0.197743E-20 0.169407E-20
+  --> max change:  dcmx=   2.4973E-05  dc/dt=   3.9021E-07 [mol/s]
+                  dvfmx=   4.6910E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 5.13E-09 2x: 8.97E+01 2u: 1.76E+00 ir: 3.76E-09 iu: 1.09E+00 rsn:   0
+  2 2r: 6.49E-10 2x: 8.99E+01 2u: 4.47E-01 ir: 4.53E-10 iu: 2.62E-01 rsn:   0
+  3 2r: 1.32E-11 2x: 8.99E+01 2u: 6.88E-02 ir: 9.21E-12 iu: 4.12E-02 rsn:   0
+  4 2r: 5.76E-15 2x: 8.99E+01 2u: 1.41E-03 ir: 4.02E-15 iu: 8.74E-04 rsn:   0
+  5 2r: 1.27E-21 2x: 8.99E+01 2u: 5.86E-07 ir: 9.45E-22 iu: 3.82E-07 rsn: rtol
+
+ Step     10 Time=  7.12500E-02 Dt=  3.55556E-02 [hr] conv_reason: 3
+  newton =   5 [      55] linear =     5 [        55] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.127200E-20 0.127200E-20 0.944640E-21
+  --> max change:  dcmx=   5.1423E-05  dc/dt=   4.0175E-07 [mol/s]
+                  dvfmx=   9.3819E-08 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.88E-09 2x: 8.93E+01 2u: 1.83E+00 ir: 3.77E-09 iu: 1.18E+00 rsn:   0
+  2 2r: 6.50E-10 2x: 8.94E+01 2u: 4.40E-01 ir: 4.56E-10 iu: 2.63E-01 rsn:   0
+  3 2r: 1.33E-11 2x: 8.95E+01 2u: 6.68E-02 ir: 9.33E-12 iu: 4.12E-02 rsn:   0
+  4 2r: 5.90E-15 2x: 8.95E+01 2u: 1.36E-03 ir: 4.13E-15 iu: 8.85E-04 rsn:   0
+  5 2r: 1.23E-21 2x: 8.95E+01 2u: 5.66E-07 ir: 8.01E-22 iu: 3.92E-07 rsn: rtol
+
+ Step     11 Time=  1.42361E-01 Dt=  7.11111E-02 [hr] conv_reason: 3
+  newton =   5 [      60] linear =     5 [        60] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.122558E-20 0.122558E-20 0.800711E-21
+  --> max change:  dcmx=   1.0943E-04  dc/dt=   4.2744E-07 [mol/s]
+                  dvfmx=   1.8764E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.53E-09 2x: 8.89E+01 2u: 2.11E+00 ir: 3.78E-09 iu: 1.40E+00 rsn:   0
+  2 2r: 6.57E-10 2x: 8.91E+01 2u: 6.90E-01 ir: 4.59E-10 iu: 5.85E-01 rsn:   0
+  3 2r: 1.95E-11 2x: 8.91E+01 2u: 2.61E-01 ir: 1.42E-11 iu: 2.55E-01 rsn:   0
+  4 2r: 2.28E-13 2x: 8.91E+01 2u: 3.97E-02 ir: 2.28E-13 iu: 3.87E-02 rsn:   0
+  5 2r: 8.73E-17 2x: 8.91E+01 2u: 7.93E-04 ir: 8.73E-17 iu: 7.69E-04 rsn: rtol
+
+ Step     12 Time=  2.84583E-01 Dt=  1.42222E-01 [hr] conv_reason: 3
+  newton =   5 [      65] linear =     5 [        65] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.872984E-16 0.872984E-16 0.872984E-16
+  --> max change:  dcmx=   2.3780E-04  dc/dt=   4.6445E-07 [mol/s]
+                  dvfmx=   3.7528E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.63E-08 2x: 8.89E+01 2u: 6.27E+00 ir: 2.76E-08 iu: 5.00E+00 rsn:   0
+  2 2r: 2.47E-06 2x: 8.96E+01 2u: 7.09E+00 ir: 1.75E-06 iu: 5.00E+00 rsn:   0
+  3 2r: 1.56E-06 2x: 9.09E+01 2u: 5.06E+00 ir: 1.10E-06 iu: 5.00E+00 rsn:   0
+  4 2r: 5.72E-07 2x: 9.31E+01 2u: 4.07E+00 ir: 4.05E-07 iu: 3.29E+00 rsn:   0
+  5 2r: 2.09E-07 2x: 9.62E+01 2u: 5.14E+00 ir: 1.47E-07 iu: 3.91E+00 rsn:   0
+  6 2r: 7.47E-08 2x: 9.98E+01 2u: 5.54E+00 ir: 5.27E-08 iu: 3.97E+00 rsn:   0
+  7 2r: 2.54E-08 2x: 1.01E+02 2u: 3.61E+00 ir: 1.79E-08 iu: 3.60E+00 rsn:   0
+  8 2r: 7.58E-09 2x: 1.04E+02 2u: 4.35E+00 ir: 5.34E-09 iu: 3.13E+00 rsn:   0
+  9 2r: 1.55E-09 2x: 1.06E+02 2u: 2.84E+00 ir: 1.09E-09 iu: 2.10E+00 rsn:   0
+ 10 2r: 1.16E-10 2x: 1.07E+02 2u: 1.13E+00 ir: 8.19E-11 iu: 9.32E-01 rsn:   0
+ 11 2r: 7.99E-13 2x: 1.07E+02 2u: 2.72E-01 ir: 5.63E-13 iu: 2.66E-01 rsn:   0
+ 12 2r: 3.85E-17 2x: 1.07E+02 2u: 2.63E-02 ir: 2.71E-17 iu: 2.63E-02 rsn: rtol
+
+ Step     13 Time=  5.69028E-01 Dt=  2.84444E-01 [hr] conv_reason: 3
+  newton =  12 [      77] linear =    12 [        77] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 12 / 12
+  --> SNES Residual: 0.384725E-16 0.384725E-16 0.271332E-16
+  --> max change:  dcmx=   3.6155E-04  dc/dt=   3.5308E-07 [mol/s]
+                  dvfmx=   7.5055E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.98E-09 2x: 1.08E+02 2u: 2.06E+00 ir: 1.81E-09 iu: 1.94E+00 rsn:   0
+  2 2r: 9.56E-11 2x: 1.08E+02 2u: 6.22E-01 ir: 9.55E-11 iu: 4.43E-01 rsn:   0
+  3 2r: 3.10E-13 2x: 1.08E+02 2u: 3.92E-01 ir: 3.10E-13 iu: 3.91E-01 rsn:   0
+  4 2r: 3.29E-18 2x: 1.08E+02 2u: 1.15E-01 ir: 3.29E-18 iu: 1.15E-01 rsn: rtol
+
+ Step     14 Time=  7.11250E-01 Dt=  1.42222E-01 [hr] conv_reason: 3
+  newton =   4 [      81] linear =     4 [        81] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.328664E-17 0.328664E-17 0.328664E-17
+  --> max change:  dcmx=   1.7977E-04  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   3.7528E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.90E-09 2x: 1.11E+02 2u: 4.86E+00 ir: 2.45E-09 iu: 4.17E+00 rsn:   0
+  2 2r: 1.90E-10 2x: 1.08E+02 2u: 5.04E+00 ir: 1.89E-10 iu: 5.00E+00 rsn:   0
+  3 2r: 1.39E-12 2x: 1.09E+02 2u: 7.34E-01 ir: 1.39E-12 iu: 7.32E-01 rsn:   0
+  4 2r: 7.71E-17 2x: 1.09E+02 2u: 5.04E-01 ir: 7.71E-17 iu: 5.04E-01 rsn: rtol
+
+ Step     15 Time=  9.95694E-01 Dt=  2.84444E-01 [hr] conv_reason: 3
+  newton =   4 [      85] linear =     4 [        85] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.770523E-16 0.770523E-16 0.770523E-16
+  --> max change:  dcmx=   3.5957E-04  dc/dt=   3.5114E-07 [mol/s]
+                  dvfmx=   7.5055E-07 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.08E-09 2x: 1.10E+02 2u: 2.80E+00 ir: 2.98E-09 iu: 2.46E+00 rsn:   0
+  2 2r: 2.98E-10 2x: 1.10E+02 2u: 8.15E-01 ir: 2.85E-10 iu: 6.73E-01 rsn:   0
+  3 2r: 3.39E-12 2x: 1.10E+02 2u: 9.46E-02 ir: 3.39E-12 iu: 9.12E-02 rsn:   0
+  4 2r: 4.99E-16 2x: 1.10E+02 2u: 1.22E-03 ir: 4.99E-16 iu: 1.17E-03 rsn:   0
+  5 2r: 7.49E-23 2x: 1.10E+02 2u: 1.57E-04 ir: 5.29E-23 iu: 1.57E-04 rsn: rtol
+
+ Step     16 Time=  1.56458E+00 Dt=  5.68889E-01 [hr] conv_reason: 3
+  newton =   5 [      90] linear =     5 [        90] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 5
+  --> SNES Residual: 0.748898E-22 0.748898E-22 0.529396E-22
+  --> max change:  dcmx=   7.2925E-04  dc/dt=   3.5608E-07 [mol/s]
+                  dvfmx=   1.5011E-06 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.80E-09 2x: 1.12E+02 2u: 3.34E+00 ir: 1.29E-09 iu: 3.16E+00 rsn:   0
+  2 2r: 2.97E-11 2x: 1.09E+02 2u: 5.00E+00 ir: 2.47E-11 iu: 5.00E+00 rsn:   0
+  3 2r: 1.50E-14 2x: 1.09E+02 2u: 8.39E-01 ir: 1.49E-14 iu: 8.39E-01 rsn:   0
+  4 2r: 5.44E-21 2x: 1.10E+02 2u: 6.31E-01 ir: 5.44E-21 iu: 6.31E-01 rsn: rtol
+
+ Step     17 Time=  2.00000E+00 Dt=  4.35417E-01 [hr] conv_reason: 3
+  newton =   4 [      94] linear =     4 [        94] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.544422E-20 0.544422E-20 0.544368E-20
+  --> max change:  dcmx=   5.6111E-04  dc/dt=   3.5796E-07 [mol/s]
+                  dvfmx=   1.1489E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 4.19E-09 2x: 1.11E+02 2u: 2.04E+00 ir: 3.10E-09 iu: 1.73E+00 rsn:   0
+  2 2r: 2.21E-10 2x: 1.10E+02 2u: 7.13E-01 ir: 1.60E-10 iu: 5.67E-01 rsn:   0
+  3 2r: 1.01E-12 2x: 1.10E+02 2u: 1.73E-01 ir: 9.49E-13 iu: 1.68E-01 rsn:   0
+  4 2r: 3.44E-17 2x: 1.10E+02 2u: 1.98E-02 ir: 3.44E-17 iu: 1.98E-02 rsn: rtol
+
+ Step     18 Time=  3.13778E+00 Dt=  1.13778E+00 [hr] conv_reason: 3
+  newton =   4 [      98] linear =     4 [        98] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.343917E-16 0.343917E-16 0.343545E-16
+  --> max change:  dcmx=   1.4649E-03  dc/dt=   3.5763E-07 [mol/s]
+                  dvfmx=   3.0022E-06 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.90E-09 2x: 1.08E+02 2u: 5.09E+00 ir: 1.46E-09 iu: 5.00E+00 rsn:   0
+  2 2r: 2.84E-11 2x: 1.08E+02 2u: 1.00E+00 ir: 2.03E-11 iu: 1.00E+00 rsn:   0
+  3 2r: 7.78E-15 2x: 1.09E+02 2u: 9.79E-01 ir: 6.34E-15 iu: 9.79E-01 rsn:   0
+  4 2r: 9.14E-22 2x: 1.09E+02 2u: 9.44E-01 ir: 8.89E-22 iu: 9.44E-01 rsn: rtol
+
+ Step     19 Time=  4.00000E+00 Dt=  8.62222E-01 [hr] conv_reason: 3
+  newton =   4 [     102] linear =     4 [       102] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.914138E-21 0.914138E-21 0.889219E-21
+  --> max change:  dcmx=   1.1056E-03  dc/dt=   3.5617E-07 [mol/s]
+                  dvfmx=   2.2751E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.81E-09 2x: 1.09E+02 2u: 2.31E+00 ir: 2.96E-09 iu: 1.55E+00 rsn:   0
+  2 2r: 1.62E-10 2x: 1.09E+02 2u: 8.22E-01 ir: 1.21E-10 iu: 7.83E-01 rsn:   0
+  3 2r: 3.59E-13 2x: 1.10E+02 2u: 4.18E-01 ir: 2.51E-13 iu: 4.18E-01 rsn:   0
+  4 2r: 2.26E-18 2x: 1.10E+02 2u: 1.15E-01 ir: 2.06E-18 iu: 1.15E-01 rsn: rtol
+
+ Step     20 Time=  6.00000E+00 Dt=  2.00000E+00 [hr] conv_reason: 3
+  newton =   4 [     106] linear =     4 [       106] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.226049E-17 0.226049E-17 0.206166E-17
+  --> max change:  dcmx=   2.5477E-03  dc/dt=   3.5385E-07 [mol/s]
+                  dvfmx=   5.2773E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.45E-09 2x: 1.10E+02 2u: 1.26E+00 ir: 1.91E-09 iu: 1.09E+00 rsn:   0
+  2 2r: 5.23E-11 2x: 1.10E+02 2u: 2.36E-01 ir: 4.07E-11 iu: 2.13E-01 rsn:   0
+  3 2r: 2.74E-14 2x: 1.10E+02 2u: 5.73E-02 ir: 1.98E-14 iu: 5.73E-02 rsn:   0
+  4 2r: 8.20E-21 2x: 1.10E+02 2u: 1.52E-03 ir: 6.33E-21 iu: 1.52E-03 rsn: rtol
+
+ Step     21 Time=  8.00000E+00 Dt=  2.00000E+00 [hr] conv_reason: 3
+  newton =   4 [     110] linear =     4 [       110] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.820224E-20 0.820224E-20 0.632959E-20
+  --> max change:  dcmx=   2.5298E-03  dc/dt=   3.5136E-07 [mol/s]
+                  dvfmx=   5.2773E-06 dvf/dt=   7.3296E-10 [1/s]
+
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.10E-09 2x: 1.11E+02 2u: 1.24E+00 ir: 1.62E-09 iu: 1.10E+00 rsn:   0
+  2 2r: 3.36E-11 2x: 1.10E+02 2u: 1.73E-01 ir: 2.65E-11 iu: 1.60E-01 rsn:   0
+  3 2r: 9.93E-15 2x: 1.10E+02 2u: 1.59E-02 ir: 7.52E-15 iu: 1.59E-02 rsn:   0
+  4 2r: 9.60E-22 2x: 1.10E+02 2u: 8.63E-05 ir: 6.63E-22 iu: 8.63E-05 rsn: rtol
+
+ Step     22 Time=  1.02756E+01 Dt=  2.27556E+00 [hr] conv_reason: 3
+  newton =   4 [     114] linear =     4 [       114] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.959730E-21 0.959730E-21 0.663399E-21
+  --> max change:  dcmx=   2.8763E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   6.0044E-06 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 3.51E-09 2x: 1.13E+02 2u: 3.96E+00 ir: 2.68E-09 iu: 3.24E+00 rsn:   0
+  2 2r: 1.21E-10 2x: 1.10E+02 2u: 5.00E+00 ir: 9.59E-11 iu: 5.00E+00 rsn:   0
+  3 2r: 1.78E-13 2x: 1.11E+02 2u: 8.68E-01 ir: 1.39E-13 iu: 8.68E-01 rsn:   0
+  4 2r: 4.60E-19 2x: 1.11E+02 2u: 6.63E-01 ir: 3.42E-19 iu: 6.63E-01 rsn: rtol
+
+ Step     23 Time=  1.48267E+01 Dt=  4.55111E+00 [hr] conv_reason: 3
+  newton =   4 [     118] linear =     4 [       118] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.460356E-18 0.460356E-18 0.342110E-18
+  --> max change:  dcmx=   5.7526E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   1.2009E-05 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.06E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 2.71E-09 2x: 1.13E+02 2u: 2.45E+00 ir: 1.99E-09 iu: 2.28E+00 rsn:   0
+  2 2r: 5.82E-11 2x: 1.13E+02 2u: 1.44E-01 ir: 4.48E-11 iu: 1.16E-01 rsn:   0
+  3 2r: 3.17E-14 2x: 1.13E+02 2u: 2.84E-01 ir: 2.50E-14 iu: 2.83E-01 rsn:   0
+  4 2r: 1.31E-20 2x: 1.13E+02 2u: 3.19E-02 ir: 1.04E-20 iu: 3.19E-02 rsn: rtol
+
+ Step     24 Time=  1.98267E+01 Dt=  5.00000E+00 [hr] conv_reason: 3
+  newton =   4 [     122] linear =     4 [       122] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.130537E-19 0.130537E-19 0.103778E-19
+  --> max change:  dcmx=   6.3200E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   1.3193E-05 dvf/dt=   7.3296E-10 [1/s]
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.21E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 1.05E-08 iu: 0.00E+00 rsn:   0
+  1 2r: 1.76E-09 2x: 1.15E+02 2u: 2.87E+00 ir: 1.20E-09 iu: 2.00E+00 rsn:   0
+  2 2r: 1.82E-11 2x: 1.13E+02 2u: 3.84E+00 ir: 1.25E-11 iu: 3.84E+00 rsn:   0
+  3 2r: 2.17E-15 2x: 1.13E+02 2u: 9.00E-01 ir: 1.73E-15 iu: 9.00E-01 rsn:   0
+  4 2r: 1.37E-22 2x: 1.14E+02 2u: 7.51E-01 ir: 1.06E-22 iu: 7.51E-01 rsn: rtol
+
+ Step     25 Time=  2.40000E+01 Dt=  4.17333E+00 [hr] conv_reason: 3
+  newton =   4 [     126] linear =     4 [       126] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 4
+  --> SNES Residual: 0.137391E-21 0.137391E-21 0.105879E-21
+  --> max change:  dcmx=   5.2751E-03  dc/dt=   3.5111E-07 [mol/s]
+                  dvfmx=   1.1012E-05 dvf/dt=   7.3296E-10 [1/s]
+
+
+PMCSubsurfaceTransport
+ Total Time: 4.4112E-01 seconds
+
+ TRAN TS SNES steps = 25  newton = 126  linear = 126  cuts = 0
+ TRAN TS SNES Wasted Linear Iterations = 0
+ TRAN TS SNES Wasted Newton Iterations = 0
+ TRAN TS SNES time = 0.4 seconds
+
+ --> write regression output file: pflotran.regression
+
+ Wall Clock Time:  5.7004E-01 [sec]   9.5007E-03 [min]   1.5834E-04 [hr]

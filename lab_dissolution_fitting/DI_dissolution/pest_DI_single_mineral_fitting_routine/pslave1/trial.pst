@@ -1,0 +1,32 @@
+pcf
+* control data
+norestart  estimation
+# Number of parameters, number of observations, number of parameter groups, number of prior information, number of observation groups
+    1     6     1     0     1
+# Number of pairs of input template files, number of model output reading instruction files, 
+    1     1 single point   1   0   0
+  5.0   2.0   0.3  0.03    10
+  3.0   3.0 0.001  0
+  0.1
+   30  0.01     3     3  0.01     3
+    1     1     1
+* parameter groups
+dgr         relative 0.01  0.0  switch  2.0 parabolic
+* parameter data
+Ni2SiO4_rate_constant            none  relative    1.0e-7      7.85e-8   2 dgr             7.85e-7       0.0000      1
+* observation groups
+obsgroup
+* observation data
+# Obs Name  Observation        Weight    Group
+obs1   -20.00000000000000000000    1.0    obsgroup
+obs2   -5.69337007151133089877    1.0    obsgroup
+obs3   -5.62897038086468004536    1.0    obsgroup
+obs4   -5.49731862030475948444    1.0    obsgroup
+obs5   -5.53163594065530173083    1.0    obsgroup
+obs6   -5.34224705070748395741    1.0    obsgroup
+* model command line
+./trial.sh
+* model input/output
+pflotran.tpl  pflotran.in
+trial.ins output_processed.txt
+* prior information

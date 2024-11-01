@@ -1,0 +1,7 @@
+ Observation           Group         Measured          Modelled        Sensitivity
+ obs1                  obsgroup      -20.00000         -20.00000         1.1920929E-05
+ obs2                  obsgroup      -5.693370         -8.425249          475171.4    
+ obs3                  obsgroup      -5.628970         -8.125548          416034.3    
+ obs4                  obsgroup      -5.497319         -7.950259          379718.2    
+ obs5                  obsgroup      -5.531636         -7.825860          355775.9    
+ obs6                  obsgroup      -5.342247         -7.350860          263290.1    

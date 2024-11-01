@@ -1,0 +1,140 @@
+-- GENERIC: pH --
+        1:   4.0283879406815E+00
+-- CONCENTRATION: Total Ni++ --
+        1:   4.7569564535308E-06
+-- CONCENTRATION: Total Fe++ --
+        1:   3.0336000939194E-06
+-- CONCENTRATION: Total Mn++ --
+        1:   3.7358299880931E-06
+-- CONCENTRATION: Total Mg++ --
+        1:   1.3752820004882E-03
+-- CONCENTRATION: Total Ca++ --
+        1:   2.1367547324752E-05
+-- CONCENTRATION: Total H+ --
+        1:  -3.3592916987925E-02
+-- CONCENTRATION: Total SiO2(aq) --
+        1:   1.0700573390637E-02
+-- CONCENTRATION: Total CrO4-- --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: Total O2(aq) --
+        1:   1.0000000001590E-04
+-- CONCENTRATION: Total NO3- --
+        1:   1.0000000000000E-04
+-- CONCENTRATION: Total K+ --
+        1:   5.0000000000000E-02
+-- CONCENTRATION: Total H2Phth- --
+        1:   5.0000000000000E-02
+-- CONCENTRATION: Total HCO3- --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: Total Al+++ --
+        1:   1.0000000000000E-20
+-- CONCENTRATION: OH- --
+        1:   1.0796623097079E-10
+-- CONCENTRATION: Cr+++ --
+        1:   1.7567702771985E-29
+-- CONCENTRATION: HPhth-- --
+        1:   1.3798847312761E-03
+-- CONCENTRATION: Phth--- --
+        1:   1.6152165274068E-02
+-- CONCENTRATION: CaNO3+ --
+        1:   1.0702581350388E-08
+-- CONCENTRATION: CaOH+ --
+        1:   3.2205128069986E-14
+-- CONCENTRATION: Fe+++ --
+        1:   9.6365926114443E-09
+-- CONCENTRATION: FeOH+ --
+        1:   1.1260325392737E-17
+-- CONCENTRATION: Fe(OH)3- --
+        1:   4.0581380987686E-31
+-- CONCENTRATION: Fe(OH)4-- --
+        1:   4.3322624925820E-42
+-- CONCENTRATION: Fe(OH)2+ --
+        1:   2.3480069651541E-06
+-- CONCENTRATION: FeOH++ --
+        1:   6.6421922290094E-07
+-- CONCENTRATION: FeNO3++ --
+        1:   9.6355153420663E-12
+-- CONCENTRATION: Fe(OH)4- --
+        1:   3.1439473335888E-14
+-- CONCENTRATION: Fe(OH)2(aq) --
+        1:   9.5485819846499E-25
+-- CONCENTRATION: Fe(OH)3(aq) --
+        1:   1.1724310770997E-08
+-- CONCENTRATION: KOH(aq) --
+        1:   1.8507934123885E-12
+-- CONCENTRATION: MgCO3(aq) --
+        1:   6.5596310789539E-27
+-- CONCENTRATION: MnOH+ --
+        1:   1.0251205156906E-12
+-- CONCENTRATION: Mn2(OH)3+ --
+        1:   2.1376558661532E-23
+-- CONCENTRATION: Mn(OH)2(aq) --
+        1:   2.6863516720178E-20
+-- CONCENTRATION: Mn(OH)3- --
+        1:   2.6899908733694E-28
+-- CONCENTRATION: Mn2OH+++ --
+        1:   4.1035705989292E-18
+-- CONCENTRATION: Mn(OH)4-- --
+        1:   2.4318609959146E-38
+-- CONCENTRATION: Mn+++ --
+        1:   2.8976603889518E-15
+-- CONCENTRATION: MnO4-- --
+        1:   1.8536703711903E-26
+-- CONCENTRATION: NO2- --
+        1:   5.8445969518755E-18
+-- CONCENTRATION: HNO3(aq) --
+        1:   4.6672762510466E-10
+-- CONCENTRATION: NH3(aq) --
+        1:   7.5522435163098E-63
+-- CONCENTRATION: Ni(OH)2(aq) --
+        1:   5.5450447731485E-18
+-- CONCENTRATION: Ni(OH)3- --
+        1:   5.9881545119392E-25
+-- CONCENTRATION: Ni2OH+++ --
+        1:   4.8199917209556E-18
+-- CONCENTRATION: HSiO3- --
+        1:   1.2743668728857E-08
+-- CONCENTRATION: H6(H2SiO4)4-- --
+        1:   3.4229614848204E-14
+-- CONCENTRATION: H4(H2SiO4)4---- --
+        1:   1.9551401480822E-28
+-- CONCENTRATION: H2SiO4-- --
+        1:   1.4947976767143E-17
+-- VOLUME_FRACTION: Forsterite VF --
+        1:   8.3790731172515E-01
+-- VOLUME_FRACTION: Fayalite VF --
+        1:   7.5250993667208E-02
+-- VOLUME_FRACTION: Ni2SiO4 VF --
+        1:   3.6519908787740E-03
+-- VOLUME_FRACTION: Tephroite VF --
+        1:   9.1291594382704E-04
+-- VOLUME_FRACTION: Wollastonite VF --
+        1:   1.1559543913821E-03
+-- VOLUME_FRACTION: Enstatite VF --
+        1:   6.3451999989419E-02
+-- VOLUME_FRACTION: Chrysotile VF --
+        1:   1.9999999988559E-02
+-- RATE: Forsterite Rate --
+        1:  -7.0036991780377E-07
+-- RATE: Fayalite Rate --
+        1:  -1.5800000158000E-09
+-- RATE: Ni2SiO4 Rate --
+        1:  -2.4416964705846E-09
+-- RATE: Tephroite Rate --
+        1:  -1.9175628360363E-09
+-- RATE: Wollastonite Rate --
+        1:  -1.3059012307594E-08
+-- RATE: Enstatite Rate --
+        1:  -3.8467004614541E-12
+-- RATE: Chrysotile Rate --
+        1:  -1.2220674854112E-12
+-- DISCRETE: Material ID --
+        1:         1
+-- SOLUTION: Transport --
+   Time (seconds):   7.4435334998725E-02
+   Time Steps:           37
+   Newton Iterations:          139
+   Linear Solver Iterations:          139
+   Time Step Cuts:            0
+   Solution 2-Norm:   6.0585396667039E-02
+   Residual 2-Norm:   4.3483248858087E-22

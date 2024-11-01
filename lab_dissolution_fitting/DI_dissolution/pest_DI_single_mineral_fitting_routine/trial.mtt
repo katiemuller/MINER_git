@@ -1,0 +1,38 @@
+ PARAMETER STATISTICAL MATRICES: CASE trial
+
+ OPTIMISATION ITERATION NUMBER  2
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ ni2sio4_rate      dgr             5.720000E-07     2.809712E-04
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+              ni2sio4_rate
+ ni2sio4_rate   7.8945E-08
+
+
+ Parameter correlation coefficient matrix ----->
+
+              ni2sio4_rate
+ ni2sio4_rate    1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1   
+ ni2sio4_rate    1.000    
+
+
+ Eigenvalues ----->
+
+                7.8945E-08

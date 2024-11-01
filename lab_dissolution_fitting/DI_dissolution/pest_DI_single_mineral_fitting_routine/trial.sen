@@ -1,0 +1,21 @@
+                        PARAMETER SENSITIVITIES: CASE trial
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   ni2sio4_rate    dgr             1.430000E-07      144043.    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   ni2sio4_rate    dgr             5.720000E-07      143271.    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =     6
+ Parameter name    Group          Current value    Sensitivity
+   ni2sio4_rate    dgr             2.288000E-06      143271.    
